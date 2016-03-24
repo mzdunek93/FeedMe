@@ -19,3 +19,11 @@ Restaurant.create!(
   ul.Kórnicka 24",
   remote_logo_url: "http://pizzatropico.eu/img/logo.png"
 )
+
+Restaurant.create!(
+  name: "Weranda",
+  description: "Restauracje Weranda to wyjątkowy koncept w gastronomii, świat wyszukanych smaków połączony z niesamowitymi wrażeniami estetycznymi. Już od 15 lat cenimy nie tylko doskonałą kuchnię, ale również przyjemną i przytulną atmosferę. Wszechobecna zieleń i dopracowane w najmniejszym szczególe dekoracje towarzyszą każdej naszej przestrzeni, umilając oczekiwanie na świeżo przyrządzane specjały.",
+  phone: "61 853 25 87",
+  address: "Świętosławska 10, 61-870 Poznań",
+  remote_logo_url: "https://d6zktcp1soofu.cloudfront.net/weranda-caffe-8600/1.mWTPT_sld.jpg"
+)
