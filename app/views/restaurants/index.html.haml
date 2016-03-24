@@ -1,0 +1,29 @@
+/ Page Content
+.container
+  / Page Heading
+  .row
+    .col-lg-12
+      %h1.page-header
+        Lista restauracji
+  / /.row
+  / Project One
+  - restaurants.each do |restaurant|
+    .row
+      .col-md-7
+        %a{:href => "#"}
+          %img.img-responsive{:alt => "", :src => restaurant.logo}/
+      .col-md-5
+        %h3= restaurant.name
+        %p= restaurant.description
+        %a.btn.btn-primary{:href => "#"}
+          View Restaurant
+          %span.glyphicon.glyphicon-chevron-right
+    / /.row
+    %hr/
+
+  / Footer
+  %footer
+    .row
+      .col-lg-12
+        %p Copyright © Your Website 2014
+    / /.row
