@@ -22,6 +22,7 @@ gem 'upmin-admin'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'decent_exposure'
+gem 'rdoc'
 group :development do
   gem 'better_errors'
   gem 'guard-bundler'
