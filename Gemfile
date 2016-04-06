@@ -23,6 +23,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'decent_exposure'
 gem 'rdoc'
+gem 'sdoc', require: false
 group :development do
   gem 'better_errors'
   gem 'guard-bundler'

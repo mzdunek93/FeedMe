@@ -7,6 +7,5 @@ require File.expand_path('../config/application', __FILE__)
 Rails.application.load_tasks
 
 RDoc::Task.new do |rdoc|
-  rdoc.main = "README.rdoc"
-  rdoc.rdoc_files.include("README.rdoc", "lib   /*.rb")
+  rdoc.rdoc_dir = "public/doc"
 end
