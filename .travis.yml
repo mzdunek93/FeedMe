@@ -6,4 +6,5 @@ deploy:
   api_key: a3b38fab-4ede-4462-8d90-d469d22d804e
   app: sheltered-dawn-87245
 script:
+  - rm -rf public/doc
   - bundle exec rake rdoc
