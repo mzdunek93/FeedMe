@@ -1,0 +1,2328 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>development.log - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/darkfish.js"></script>
+
+<link href="../css/fonts.css" rel="stylesheet">
+<link href="../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../table_of_contents.html#pages">Pages</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../Guardfile.html">Guardfile</a>
+  
+    <li><a href="../README.html">README</a>
+  
+    <li><a href="../README_md.html">README</a>
+  
+    <li><a href="../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../app_json.html">app.json</a>
+  
+    <li><a href="../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../app/assets/javascripts/restaurants_coffee.html">restaurants.coffee</a>
+  
+    <li><a href="../app/assets/stylesheets/1-col-portfolio_css.html">1-col-portfolio.css</a>
+  
+    <li><a href="../app/assets/stylesheets/1st_load_framework_css_scss.html">1st_load_framework.css.scss</a>
+  
+    <li><a href="../app/assets/stylesheets/application_css_scss.html">application.css.scss</a>
+  
+    <li><a href="../app/assets/stylesheets/restaurants_scss.html">restaurants.scss</a>
+  
+    <li><a href="../app/views/devise/passwords/edit_html_haml.html">edit.html.haml</a>
+  
+    <li><a href="../app/views/devise/passwords/new_html_haml.html">new.html.haml</a>
+  
+    <li><a href="../app/views/devise/registrations/edit_html_haml.html">edit.html.haml</a>
+  
+    <li><a href="../app/views/devise/registrations/new_html_haml.html">new.html.haml</a>
+  
+    <li><a href="../app/views/devise/sessions/new_html_haml.html">new.html.haml</a>
+  
+    <li><a href="../app/views/layouts/_messages_html_haml.html">_messages.html.haml</a>
+  
+    <li><a href="../app/views/layouts/_nav_links_for_auth_html_haml.html">_nav_links_for_auth.html.haml</a>
+  
+    <li><a href="../app/views/layouts/_navigation_html_haml.html">_navigation.html.haml</a>
+  
+    <li><a href="../app/views/layouts/_navigation_links_html_haml.html">_navigation_links.html.haml</a>
+  
+    <li><a href="../app/views/layouts/application_html_haml.html">application.html.haml</a>
+  
+    <li><a href="../app/views/pages/about_html_haml.html">about.html.haml</a>
+  
+    <li><a href="../app/views/restaurants/index_html_haml.html">index.html.haml</a>
+  
+    <li><a href="../app/views/users/_user_html_haml.html">_user.html.haml</a>
+  
+    <li><a href="../app/views/users/index_html_haml.html">index.html.haml</a>
+  
+    <li><a href="../app/views/users/show_html_haml.html">show.html.haml</a>
+  
+    <li><a href="../app/views/visitors/index_html_haml.html">index.html.haml</a>
+  
+    <li><a href="../config_ru.html">config.ru</a>
+  
+    <li><a href="../lib/templates/haml/scaffold/_form_html_haml.html">_form.html.haml</a>
+  
+    <li><a href="../log/development_log.html">development.log</a>
+  
+    <li><a href="../log/production_log.html">production.log</a>
+  
+    <li><a href="../log/test_log.html">test.log</a>
+  
+    <li><a href="../public/404_html.html">404.html</a>
+  
+    <li><a href="../public/422_html.html">422.html</a>
+  
+    <li><a href="../public/500_html.html">500.html</a>
+  
+    <li><a href="../public/favicon_ico.html">favicon.ico</a>
+  
+    <li><a href="../public/humans_txt.html">humans</a>
+  
+    <li><a href="../public/robots_txt.html">robots</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page log/development.log">
+
+<pre>[1m[36m (245.4ms)[0m  [1mCREATE TABLE &quot;schema_migrations&quot; (&quot;version&quot; varchar NOT NULL) [0m
+[1m[35m (0.2ms)[0m  select sqlite_version(*)
+[1m[36m (164.6ms)[0m  [1mCREATE UNIQUE INDEX &quot;unique_schema_migrations&quot; ON &quot;schema_migrations&quot; (&quot;version&quot;)[0m
+[1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;</pre>
+
+<p>Migrating to <a href="../DeviseCreateUsers.html">DeviseCreateUsers</a>
+(20160324093848)</p>
+
+<pre>[1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1m[35m (0.7ms)[0m  CREATE TABLE &quot;users&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;email&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;encrypted_password&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;reset_password_token&quot; varchar, &quot;reset_password_sent_at&quot; datetime, &quot;remember_created_at&quot; datetime, &quot;sign_in_count&quot; integer DEFAULT 0 NOT NULL, &quot;current_sign_in_at&quot; datetime, &quot;last_sign_in_at&quot; datetime, &quot;current_sign_in_ip&quot; varchar, &quot;last_sign_in_ip&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL) 
+[1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX &quot;index_users_on_email&quot; ON &quot;users&quot; (&quot;email&quot;)[0m
+[1m[35m (0.2ms)[0m              SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+
+[1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX &quot;index_users_on_reset_password_token&quot; ON &quot;users&quot; (&quot;reset_password_token&quot;)[0m
+[1m[35mSQL (0.2ms)[0m  INSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)  [[&quot;version&quot;, &quot;20160324093848&quot;]]
+[1m[36m (164.3ms)[0m  [1mcommit transaction[0m</pre>
+
+<p>Migrating to <a href="../AddNameToUsers.html">AddNameToUsers</a>
+(20160324093853)</p>
+
+<pre>[1m[35m (0.1ms)[0m  begin transaction
+[1m[36m (0.5ms)[0m  [1mALTER TABLE &quot;users&quot; ADD &quot;name&quot; varchar[0m
+[1m[35mSQL (0.2ms)[0m  INSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)  [[&quot;version&quot;, &quot;20160324093853&quot;]]
+[1m[36m (140.8ms)[0m  [1mcommit transaction[0m
+[1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;
+[1m[36m (0.2ms)[0m  [1m            SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_reset_password_token&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_reset_password_token&#39; AND type=&#39;index&#39;</pre>
+
+<p>[0m</p>
+
+<pre>[1m[35m (0.2ms)[0m              SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+
+[1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m</pre>
+
+<p>Migrating to <a href="../AddRoleToUsers.html">AddRoleToUsers</a>
+(20160324093904)</p>
+
+<pre>[1m[35m (0.2ms)[0m  begin transaction
+[1m[36m (0.6ms)[0m  [1mALTER TABLE &quot;users&quot; ADD &quot;role&quot; integer[0m
+[1m[35mSQL (0.3ms)[0m  INSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)  [[&quot;version&quot;, &quot;20160324093904&quot;]]
+[1m[36m (162.7ms)[0m  [1mcommit transaction[0m
+[1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;
+[1m[36m (0.3ms)[0m  [1m            SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_reset_password_token&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_reset_password_token&#39; AND type=&#39;index&#39;</pre>
+
+<p>[0m</p>
+
+<pre>[1m[35m (0.2ms)[0m              SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+
+[1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[35mUser Load (0.3ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = ? LIMIT 1  [[&quot;email&quot;, &quot;user@example.com&quot;]]
+[1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = &#39;user@example.com&#39; LIMIT 1
+[1m[36mSQL (0.3ms)[0m  [1mINSERT INTO &quot;users&quot; (&quot;email&quot;, &quot;encrypted_password&quot;, &quot;role&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?, ?)[0m  [[&quot;email&quot;, &quot;user@example.com&quot;], [&quot;encrypted_password&quot;, &quot;$2a$10$NamwlYnn.XTYBE4Ly6VlOO/fnFBuB.fRmGrSldZPKWPoH8lvIFigS&quot;], [&quot;role&quot;, 2], [&quot;created_at&quot;, &quot;2016-03-24 09:39:46.789529&quot;], [&quot;updated_at&quot;, &quot;2016-03-24 09:39:46.789529&quot;]]
+[1m[35m (170.4ms)[0m  commit transaction
+[1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+[1m[35m (0.1ms)[0m  commit transaction</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 10:43:51 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m</pre>
+
+<p>Processing by VisitorsController#index as HTML</p>
+
+<pre>Rendered visitors/index.html.erb within layouts/application (8.6ms)</pre>
+
+<p>WARNING on line 18, column 11 of
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `yellow&#39; in
+interpolation here. It may end up represented as ffff00, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “yellow”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 18, column 11 of
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `orange&#39; in
+interpolation here. It may end up represented as ffa500, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “orange”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 18, column 11 of
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `red&#39; in
+interpolation here. It may end up represented as ff0000, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “red”). If you really want to use the color value here, use
+`“” + $name&#39;.</p>
+
+<p>WARNING on line 18, column 11 of
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `purple&#39; in
+interpolation here. It may end up represented as #800080, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “purple”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 18, column 11 of
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `green&#39; in
+interpolation here. It may end up represented as #008000, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “green”). If you really want to use the color value here, use
+`“” + $name&#39;.</p>
+
+<p>WARNING on line 32, column 7 of
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `yellow&#39; in
+interpolation here. It may end up represented as ffff00, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “yellow”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 32, column 7 of
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `orange&#39; in
+interpolation here. It may end up represented as ffa500, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “orange”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 32, column 7 of
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `red&#39; in
+interpolation here. It may end up represented as ff0000, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “red”). If you really want to use the color value here, use
+`“” + $name&#39;.</p>
+
+<p>WARNING on line 32, column 7 of
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `purple&#39; in
+interpolation here. It may end up represented as #800080, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “purple”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 32, column 7 of
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `green&#39; in
+interpolation here. It may end up represented as #008000, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “green”). If you really want to use the color value here, use
+`“” + $name&#39;.</p>
+
+<p>WARNING on line 20, column 7 of
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/instances.css.scss:
+You probably don&#39;t mean to use the color value `yellow&#39; in
+interpolation here. It may end up represented as ffff00, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “yellow”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 20, column 7 of
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/instances.css.scss:
+You probably don&#39;t mean to use the color value `orange&#39; in
+interpolation here. It may end up represented as ffa500, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “orange”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 20, column 7 of
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/instances.css.scss:
+You probably don&#39;t mean to use the color value `red&#39; in
+interpolation here. It may end up represented as ff0000, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “red”). If you really want to use the color value here, use
+`“” + $name&#39;.</p>
+
+<p>WARNING on line 20, column 7 of
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/instances.css.scss:
+You probably don&#39;t mean to use the color value `purple&#39; in
+interpolation here. It may end up represented as #800080, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “purple”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 20, column 7 of
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/instances.css.scss:
+You probably don&#39;t mean to use the color value `green&#39; in
+interpolation here. It may end up represented as #008000, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “green”). If you really want to use the color value here, use
+`“” + $name&#39;.</p>
+
+<pre>Rendered layouts/_navigation_links.html.erb (0.4ms)
+Rendered layouts/_navigation.html.haml (4.7ms)
+Rendered layouts/_messages.html.haml (1.8ms)</pre>
+
+<p>Completed 200 OK in 6496ms (Views: 6496.1ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 10:44:11 +0100 Processing by
+VisitorsController#index as HTML</p>
+
+<pre>Rendered visitors/index.html.erb within layouts/application (0.1ms)
+Rendered layouts/_navigation_links.html.erb (0.0ms)
+Rendered layouts/_navigation.html.haml (1.0ms)
+Rendered layouts/_messages.html.haml (0.1ms)</pre>
+
+<p>Completed 200 OK in 71ms (Views: 71.1ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 11:32:11 +0100</p>
+
+<pre>[1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;</pre>
+
+<p>ActiveRecord::PendingMigrationError -</p>
+
+<p>Migrations are pending. To resolve this issue, run:</p>
+
+<pre>bin/rake db:migrate RAILS_ENV=development</pre>
+
+<p>:</p>
+
+<pre>activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!&#39;
+activerecord (4.2.6) lib/active_record/migration.rb:373:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call&#39;
+better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call&#39;
+better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call&#39;
+better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;</pre>
+
+<p>Started POST “/__better_errors/d1df55bccb62fa1a/variables” for 127.0.0.1 at
+2016-03-24 11:32:11 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m</pre>
+
+<p>Migrating to <a href="../CreateRestaurants.html">CreateRestaurants</a>
+(20160324101756)</p>
+
+<pre>[1m[35m (0.2ms)[0m  begin transaction
+[1m[36m (0.6ms)[0m  [1mCREATE TABLE &quot;restaurants&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;name&quot; varchar, &quot;description&quot; varchar, &quot;logo&quot; varchar, &quot;phone&quot; varchar, &quot;address&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL) [0m
+[1m[35mSQL (0.4ms)[0m  INSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)  [[&quot;version&quot;, &quot;20160324101756&quot;]]
+[1m[36m (175.0ms)[0m  [1mcommit transaction[0m
+[1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;
+[1m[36m (0.2ms)[0m  [1m            SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_reset_password_token&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_reset_password_token&#39; AND type=&#39;index&#39;</pre>
+
+<p>[0m</p>
+
+<pre>[1m[35m (0.1ms)[0m              SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 11:32:32 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m</pre>
+
+<p>ActionController::RoutingError - undefined method `expose&#39; for
+RestaurantsController:Class:</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:63:in `rescue in controller&#39;
+actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:58:in `controller&#39;
+actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:39:in `serve&#39;
+actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve&#39;
+actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve&#39;
+actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call&#39;
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.6) lib/warden/manager.rb:34:in `call&#39;
+rack (1.6.4) lib/rack/etag.rb:24:in `call&#39;
+rack (1.6.4) lib/rack/conditionalget.rb:25:in `call&#39;
+rack (1.6.4) lib/rack/head.rb:13:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call&#39;
+rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call&#39;
+activerecord (4.2.6) lib/active_record/migration.rb:377:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call&#39;
+better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call&#39;
+better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call&#39;
+better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;</pre>
+
+<p>Started POST “/__better_errors/90b367220233fbc1/variables” for 127.0.0.1 at
+2016-03-24 11:32:32 +0100</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 11:34:10 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m</pre>
+
+<p>Processing by <a
+href="../RestaurantsController.html#method-i-index">RestaurantsController#index</a>
+as HTML</p>
+
+<pre>Rendered restaurants/index.html.haml within layouts/application (2.3ms)
+Rendered layouts/_navigation_links.html.erb (0.4ms)
+Rendered layouts/_navigation.html.haml (3.7ms)
+Rendered layouts/_messages.html.haml (1.4ms)</pre>
+
+<p>Completed 200 OK in 1638ms (Views: 1637.5ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 11:40:56 +0100 Processing by <a
+href="../RestaurantsController.html#method-i-index">RestaurantsController#index</a>
+as HTML</p>
+
+<pre>Rendered restaurants/index.html.haml within layouts/application (16.5ms)
+Rendered layouts/_navigation_links.html.haml (0.8ms)
+Rendered layouts/_navigation.html.haml (1.8ms)
+Rendered layouts/_messages.html.haml (0.1ms)</pre>
+
+<p>Completed 200 OK in 129ms (Views: 128.3ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 11:43:47 +0100 Processing by <a
+href="../RestaurantsController.html#method-i-index">RestaurantsController#index</a>
+as HTML</p>
+
+<pre>Rendered restaurants/index.html.haml within layouts/application (11.6ms)
+Rendered layouts/_navigation_links.html.haml (0.1ms)
+Rendered layouts/_navigation.html.haml (0.9ms)
+Rendered layouts/_messages.html.haml (0.1ms)</pre>
+
+<p>Completed 200 OK in 76ms (Views: 75.3ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 11:54:18 +0100 Processing by <a
+href="../RestaurantsController.html#method-i-index">RestaurantsController#index</a>
+as HTML</p>
+
+<pre>Rendered restaurants/index.html.haml within layouts/application (61.2ms)</pre>
+
+<p>Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)</p>
+
+<p>NameError - uninitialized constant Restaurant::AvatarUploader:</p>
+
+<pre>activesupport (4.2.6) lib/active_support/dependencies.rb:533:in `load_missing_constant&#39;
+activesupport (4.2.6) lib/active_support/dependencies.rb:184:in `const_missing&#39;
+app/models/restaurant.rb:2:in `&lt;class:Restaurant&gt;&#39;
+app/models/restaurant.rb:1:in `&lt;top (required)&gt;&#39;
+activesupport (4.2.6) lib/active_support/dependencies.rb:457:in `block in load_file&#39;
+activesupport (4.2.6) lib/active_support/dependencies.rb:647:in `new_constants_in&#39;
+activesupport (4.2.6) lib/active_support/dependencies.rb:456:in `load_file&#39;
+activesupport (4.2.6) lib/active_support/dependencies.rb:354:in `require_or_load&#39;
+activesupport (4.2.6) lib/active_support/dependencies.rb:494:in `load_missing_constant&#39;
+activesupport (4.2.6) lib/active_support/dependencies.rb:184:in `const_missing&#39;
+decent_exposure (2.3.3) lib/decent_exposure/constant_resolver.rb:24:in `namespace_qualified&#39;
+decent_exposure (2.3.3) lib/decent_exposure/constant_resolver.rb:12:in `constant&#39;
+decent_exposure (2.3.3) lib/decent_exposure/strategy.rb:29:in `model&#39;
+decent_exposure (2.3.3) lib/decent_exposure/strategy.rb:20:in `inflector&#39;
+decent_exposure (2.3.3) lib/decent_exposure/active_record_strategy.rb:6:in `plural?&#39;
+decent_exposure (2.3.3) lib/decent_exposure/active_record_strategy.rb:67:in `resource&#39;
+decent_exposure (2.3.3) lib/decent_exposure/strategies/assign_from_params.rb:18:in `resource&#39;
+decent_exposure (2.3.3) lib/decent_exposure/exposure.rb:14:in `call&#39;
+decent_exposure (2.3.3) lib/decent_exposure/expose.rb:53:in `block in define_exposure_methods&#39;
+actionpack (4.2.6) lib/abstract_controller/helpers.rb:67:in `restaurants&#39;
+app/views/restaurants/index.html.haml:10:in `_app_views_restaurants_index_html_haml___1434004269416515835_69926464528640&#39;
+actionview (4.2.6) lib/action_view/template.rb:145:in `block in render&#39;
+activesupport (4.2.6) lib/active_support/notifications.rb:166:in `instrument&#39;
+actionview (4.2.6) lib/action_view/template.rb:333:in `instrument&#39;
+actionview (4.2.6) lib/action_view/template.rb:143:in `render&#39;
+actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template&#39;
+actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument&#39;
+activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument&#39;
+activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument&#39;
+actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument&#39;
+actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template&#39;
+actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout&#39;
+actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:52:in `render_template&#39;
+actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:14:in `render&#39;
+actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template&#39;
+actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render&#39;
+actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template&#39;
+actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template&#39;
+actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body&#39;
+actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body&#39;
+actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body&#39;
+actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render&#39;
+actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render&#39;
+actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render&#39;
+activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime&#39;
+activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms&#39;
+actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render&#39;
+actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime&#39;
+activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime&#39;
+actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render&#39;
+actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render&#39;
+actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action&#39;
+actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action&#39;
+actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;
+actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks&#39;
+actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action&#39;
+activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument&#39;
+activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument&#39;
+actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process&#39;
+actionview (4.2.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action&#39;
+actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch&#39;
+actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve&#39;
+actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve&#39;
+actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve&#39;
+actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call&#39;
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.6) lib/warden/manager.rb:34:in `call&#39;
+rack (1.6.4) lib/rack/etag.rb:24:in `call&#39;
+rack (1.6.4) lib/rack/conditionalget.rb:25:in `call&#39;
+rack (1.6.4) lib/rack/head.rb:13:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call&#39;
+rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call&#39;
+activerecord (4.2.6) lib/active_record/migration.rb:377:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call&#39;
+better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call&#39;
+better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call&#39;
+better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;</pre>
+
+<p>Started POST “/__better_errors/17125d18390ad771/variables” for 127.0.0.1 at
+2016-03-24 11:54:18 +0100</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 11:54:54 +0100 Processing by <a
+href="../RestaurantsController.html#method-i-index">RestaurantsController#index</a>
+as HTML</p>
+
+<pre>[1m[35mRestaurant Load (0.5ms)[0m  SELECT &quot;restaurants&quot;.* FROM &quot;restaurants&quot;
+Rendered restaurants/index.html.haml within layouts/application (7.0ms)
+Rendered layouts/_navigation_links.html.haml (0.0ms)
+Rendered layouts/_navigation.html.haml (0.9ms)
+Rendered layouts/_messages.html.haml (0.1ms)</pre>
+
+<p>Completed 200 OK in 68ms (Views: 67.5ms | ActiveRecord: 0.6ms)</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[35mUser Load (0.3ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = ? LIMIT 1  [[&quot;email&quot;, &quot;user@example.com&quot;]]
+[1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[35mUser Load (0.3ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = ? LIMIT 1  [[&quot;email&quot;, &quot;user@example.com&quot;]]
+[1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1m[35m (0.1ms)[0m  rollback transaction
+[1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[35mUser Load (0.3ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = ? LIMIT 1  [[&quot;email&quot;, &quot;user@example.com&quot;]]
+[1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1m[35m (0.1ms)[0m  rollback transaction
+[1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[35mUser Load (0.3ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = ? LIMIT 1  [[&quot;email&quot;, &quot;user@example.com&quot;]]
+[1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1m[35m (0.1ms)[0m  rollback transaction
+[1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[35mUser Load (0.3ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = ? LIMIT 1  [[&quot;email&quot;, &quot;user@example.com&quot;]]
+[1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1m[35mSQL (0.4ms)[0m  INSERT INTO &quot;restaurants&quot; (&quot;name&quot;, &quot;description&quot;, &quot;phone&quot;, &quot;address&quot;, &quot;logo&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?, ?, ?, ?)  [[&quot;name&quot;, &quot;Tropico&quot;], [&quot;description&quot;, &quot;Witamy serdecznie na naszej stronie, na której możecie zamówić ulubione dania on-line jak i telefonicznie.\n\n  Nasze menu składa się z najpopularniejszych potraw kuchni polskiej, włoskiej oraz tureckiej.\n  Wszystkie nasz potrawy przygotowywane są z starannie dobranych składników tak, aby zachwycać świeżością i smakiem.&quot;], [&quot;phone&quot;, &quot;61 877 55 66&quot;], [&quot;address&quot;, &quot;PIZZA POZNAŃ RATAJE \n  ul.Kórnicka 24&quot;], [&quot;logo&quot;, &quot;logo.png&quot;], [&quot;created_at&quot;, &quot;2016-03-24 11:16:42.567226&quot;], [&quot;updated_at&quot;, &quot;2016-03-24 11:16:42.567226&quot;]]
+[1m[36m (145.7ms)[0m  [1mcommit transaction[0m</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 12:17:14 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m</pre>
+
+<p>Processing by <a
+href="../RestaurantsController.html#method-i-index">RestaurantsController#index</a>
+as HTML</p>
+
+<pre>[1m[35mRestaurant Load (0.4ms)[0m  SELECT &quot;restaurants&quot;.* FROM &quot;restaurants&quot;
+Rendered restaurants/index.html.haml within layouts/application (42.0ms)
+Rendered layouts/_navigation_links.html.haml (0.8ms)
+Rendered layouts/_navigation.html.haml (4.3ms)
+Rendered layouts/_messages.html.haml (1.6ms)</pre>
+
+<p>Completed 200 OK in 596ms (Views: 594.5ms | ActiveRecord: 1.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 12:17:33 +0100 Processing by <a
+href="../RestaurantsController.html#method-i-index">RestaurantsController#index</a>
+as HTML</p>
+
+<pre>[1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT &quot;restaurants&quot;.* FROM &quot;restaurants&quot;[0m
+Rendered restaurants/index.html.haml within layouts/application (75.7ms)</pre>
+
+<p>Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.3ms)</p>
+
+<p>NoMethodError - undefined method `title&#39; for
+#&lt;Restaurant:0x0056363d002a48&gt;:</p>
+
+<pre>activemodel (4.2.6) lib/active_model/attribute_methods.rb:433:in `method_missing&#39;
+app/views/restaurants/index.html.haml:16:in `block in _app_views_restaurants_index_html_haml__294270564981291016_47395476942760&#39;
+activerecord (4.2.6) lib/active_record/relation/delegation.rb:46:in `each&#39;
+app/views/restaurants/index.html.haml:10:in `_app_views_restaurants_index_html_haml__294270564981291016_47395476942760&#39;
+actionview (4.2.6) lib/action_view/template.rb:145:in `block in render&#39;
+activesupport (4.2.6) lib/active_support/notifications.rb:166:in `instrument&#39;
+actionview (4.2.6) lib/action_view/template.rb:333:in `instrument&#39;
+actionview (4.2.6) lib/action_view/template.rb:143:in `render&#39;
+actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template&#39;
+actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument&#39;
+activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument&#39;
+activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument&#39;
+actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument&#39;
+actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template&#39;
+actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout&#39;
+actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:52:in `render_template&#39;
+actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:14:in `render&#39;
+actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template&#39;
+actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render&#39;
+actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template&#39;
+actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template&#39;
+actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body&#39;
+actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body&#39;
+actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body&#39;
+actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render&#39;
+actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render&#39;
+actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render&#39;
+activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime&#39;
+activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms&#39;
+actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render&#39;
+actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime&#39;
+activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime&#39;
+actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render&#39;
+actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render&#39;
+actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action&#39;
+actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action&#39;
+actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action&#39;
+actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks&#39;
+actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action&#39;
+actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action&#39;
+activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument&#39;
+activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#39;
+activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument&#39;
+actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action&#39;
+activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#39;
+actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process&#39;
+actionview (4.2.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch&#39;
+actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch&#39;
+actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action&#39;
+actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch&#39;
+actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve&#39;
+actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve&#39;
+actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve&#39;
+actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call&#39;
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call&#39;
+warden (1.2.6) lib/warden/manager.rb:34:in `call&#39;
+rack (1.6.4) lib/rack/etag.rb:24:in `call&#39;
+rack (1.6.4) lib/rack/conditionalget.rb:25:in `call&#39;
+rack (1.6.4) lib/rack/head.rb:13:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call&#39;
+rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context&#39;
+rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call&#39;
+activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call&#39;
+activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call&#39;
+activerecord (4.2.6) lib/active_record/migration.rb:377:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks&#39;
+activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call&#39;
+better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call&#39;
+better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call&#39;
+better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;</pre>
+
+<p>Started POST “/__better_errors/bac8868e854c6ebb/variables” for 127.0.0.1 at
+2016-03-24 12:17:33 +0100</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 12:17:40 +0100 Processing by <a
+href="../RestaurantsController.html#method-i-index">RestaurantsController#index</a>
+as HTML</p>
+
+<pre>[1m[35mRestaurant Load (0.3ms)[0m  SELECT &quot;restaurants&quot;.* FROM &quot;restaurants&quot;
+Rendered restaurants/index.html.haml within layouts/application (52.7ms)
+Rendered layouts/_navigation_links.html.haml (0.1ms)
+Rendered layouts/_navigation.html.haml (0.9ms)
+Rendered layouts/_messages.html.haml (0.1ms)</pre>
+
+<p>Completed 200 OK in 132ms (Views: 131.6ms | ActiveRecord: 0.3ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 12:22:23 +0100 Processing by <a
+href="../RestaurantsController.html#method-i-index">RestaurantsController#index</a>
+as HTML</p>
+
+<pre>[1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT &quot;restaurants&quot;.* FROM &quot;restaurants&quot;[0m
+Rendered restaurants/index.html.haml within layouts/application (10.5ms)
+Rendered layouts/_navigation_links.html.haml (0.1ms)
+Rendered layouts/_navigation.html.haml (0.9ms)
+Rendered layouts/_messages.html.haml (0.1ms)</pre>
+
+<p>Completed 200 OK in 79ms (Views: 78.1ms | ActiveRecord: 0.2ms)</p>
+
+<p>Started GET “/admin” for 127.0.0.1 at 2016-03-24 12:25:16 +0100 Processing
+by Upmin::DashboardController#index as HTML Completed 401 Unauthorized in
+5ms (ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/users/sign_in” for 127.0.0.1 at 2016-03-24 12:25:17 +0100
+Processing by Devise::SessionsController#new as HTML</p>
+
+<pre>Rendered devise/sessions/new.html.haml within layouts/application (40.5ms)
+Rendered layouts/_navigation_links.html.haml (0.1ms)
+Rendered layouts/_navigation.html.haml (1.7ms)
+Rendered layouts/_messages.html.haml (0.4ms)</pre>
+
+<p>Completed 200 OK in 307ms (Views: 128.1ms | ActiveRecord: 0.4ms)</p>
+
+<pre>[1m[36m (180.9ms)[0m  [1mCREATE TABLE &quot;restaurants&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;name&quot; varchar, &quot;description&quot; varchar, &quot;logo&quot; varchar, &quot;phone&quot; varchar, &quot;address&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL) [0m
+[1m[35m (160.0ms)[0m  CREATE TABLE &quot;users&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;email&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;encrypted_password&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;reset_password_token&quot; varchar, &quot;reset_password_sent_at&quot; datetime, &quot;remember_created_at&quot; datetime, &quot;sign_in_count&quot; integer DEFAULT 0 NOT NULL, &quot;current_sign_in_at&quot; datetime, &quot;last_sign_in_at&quot; datetime, &quot;current_sign_in_ip&quot; varchar, &quot;last_sign_in_ip&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL, &quot;name&quot; varchar, &quot;role&quot; integer) 
+[1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+[1m[35m (154.1ms)[0m  CREATE UNIQUE INDEX &quot;index_users_on_email&quot; ON &quot;users&quot; (&quot;email&quot;)
+[1m[36m (0.1ms)[0m  [1m            SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;</pre>
+
+<p>[0m</p>
+
+<pre>[1m[35m (154.8ms)[0m  CREATE UNIQUE INDEX &quot;index_users_on_reset_password_token&quot; ON &quot;users&quot; (&quot;reset_password_token&quot;)
+[1m[36m (174.8ms)[0m  [1mCREATE TABLE &quot;schema_migrations&quot; (&quot;version&quot; varchar NOT NULL) [0m
+[1m[35m (155.9ms)[0m  CREATE UNIQUE INDEX &quot;unique_schema_migrations&quot; ON &quot;schema_migrations&quot; (&quot;version&quot;)
+[1m[36m (0.1ms)[0m  [1mSELECT version FROM &quot;schema_migrations&quot;[0m
+[1m[35m (144.0ms)[0m  INSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324101756&#39;)
+[1m[36m (143.9ms)[0m  [1mINSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093848&#39;)[0m
+[1m[35m (209.9ms)[0m  INSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093853&#39;)
+[1m[36m (166.0ms)[0m  [1mINSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093904&#39;)[0m
+[1m[35m (131.4ms)[0m  CREATE TABLE &quot;restaurants&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;name&quot; varchar, &quot;description&quot; varchar, &quot;logo&quot; varchar, &quot;phone&quot; varchar, &quot;address&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL) 
+[1m[36m (153.9ms)[0m  [1mCREATE TABLE &quot;users&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;email&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;encrypted_password&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;reset_password_token&quot; varchar, &quot;reset_password_sent_at&quot; datetime, &quot;remember_created_at&quot; datetime, &quot;sign_in_count&quot; integer DEFAULT 0 NOT NULL, &quot;current_sign_in_at&quot; datetime, &quot;last_sign_in_at&quot; datetime, &quot;current_sign_in_ip&quot; varchar, &quot;last_sign_in_ip&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL, &quot;name&quot; varchar, &quot;role&quot; integer) [0m
+[1m[35m (0.1ms)[0m  select sqlite_version(*)
+[1m[36m (132.2ms)[0m  [1mCREATE UNIQUE INDEX &quot;index_users_on_email&quot; ON &quot;users&quot; (&quot;email&quot;)[0m
+[1m[35m (0.3ms)[0m              SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+
+[1m[36m (132.2ms)[0m  [1mCREATE UNIQUE INDEX &quot;index_users_on_reset_password_token&quot; ON &quot;users&quot; (&quot;reset_password_token&quot;)[0m
+[1m[35m (132.4ms)[0m  CREATE TABLE &quot;schema_migrations&quot; (&quot;version&quot; varchar NOT NULL) 
+[1m[36m (131.7ms)[0m  [1mCREATE UNIQUE INDEX &quot;unique_schema_migrations&quot; ON &quot;schema_migrations&quot; (&quot;version&quot;)[0m
+[1m[35m (0.3ms)[0m  SELECT version FROM &quot;schema_migrations&quot;
+[1m[36m (131.7ms)[0m  [1mINSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324101756&#39;)[0m
+[1m[35m (155.0ms)[0m  INSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093848&#39;)
+[1m[36m (133.1ms)[0m  [1mINSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093853&#39;)[0m
+[1m[35m (133.0ms)[0m  INSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093904&#39;)
+[1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[35mUser Load (0.3ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = ? LIMIT 1  [[&quot;email&quot;, &quot;admin@admin.com&quot;]]
+[1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = &#39;admin@admin.com&#39; LIMIT 1
+[1m[36mSQL (0.5ms)[0m  [1mINSERT INTO &quot;users&quot; (&quot;email&quot;, &quot;encrypted_password&quot;, &quot;role&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?, ?)[0m  [[&quot;email&quot;, &quot;admin@admin.com&quot;], [&quot;encrypted_password&quot;, &quot;$2a$10$qphDBsOT0TrTFX7HhofjKuykxy4sHIftxnnJdrurZCbe3atOr7B2y&quot;], [&quot;role&quot;, 2], [&quot;created_at&quot;, &quot;2016-03-24 11:26:10.603993&quot;], [&quot;updated_at&quot;, &quot;2016-03-24 11:26:10.603993&quot;]]
+[1m[35m (143.9ms)[0m  commit transaction
+[1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1m[35m (0.1ms)[0m  commit transaction
+[1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+[1m[35mSQL (0.4ms)[0m  INSERT INTO &quot;restaurants&quot; (&quot;name&quot;, &quot;description&quot;, &quot;phone&quot;, &quot;address&quot;, &quot;logo&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?, ?, ?, ?)  [[&quot;name&quot;, &quot;Tropico&quot;], [&quot;description&quot;, &quot;Witamy serdecznie na naszej stronie, na której możecie zamówić ulubione dania on-line jak i telefonicznie.\n\n  Nasze menu składa się z najpopularniejszych potraw kuchni polskiej, włoskiej oraz tureckiej.\n  Wszystkie nasz potrawy przygotowywane są z starannie dobranych składników tak, aby zachwycać świeżością i smakiem.&quot;], [&quot;phone&quot;, &quot;61 877 55 66&quot;], [&quot;address&quot;, &quot;PIZZA POZNAŃ RATAJE \n  ul.Kórnicka 24&quot;], [&quot;logo&quot;, &quot;logo.png&quot;], [&quot;created_at&quot;, &quot;2016-03-24 11:26:11.268300&quot;], [&quot;updated_at&quot;, &quot;2016-03-24 11:26:11.268300&quot;]]
+[1m[36m (175.5ms)[0m  [1mcommit transaction[0m</pre>
+
+<p>Started POST “/users/sign_in” for 127.0.0.1 at 2016-03-24 12:38:44 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m</pre>
+
+<p>Processing by Devise::SessionsController#create as HTML</p>
+
+<pre>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;authenticity_token&quot;=&gt;&quot;SX/Nj/vSvygjKrDyzGsc6EA3KWiMO+M6EI3JPOpRw7Bg649D+MY4dbNvcQMZwkmrO1fw7IbyxGSySeN3D9C3Ew==&quot;, &quot;user&quot;=&gt;{&quot;email&quot;=&gt;&quot;admin@admin.com&quot;, &quot;password&quot;=&gt;&quot;[FILTERED]&quot;, &quot;remember_me&quot;=&gt;&quot;0&quot;}, &quot;commit&quot;=&gt;&quot;Sign in&quot;}
+[1m[35mUser Load (0.4ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1  [[&quot;email&quot;, &quot;admin@admin.com&quot;]]
+[1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1m[35mSQL (0.4ms)[0m  UPDATE &quot;users&quot; SET &quot;last_sign_in_at&quot; = ?, &quot;current_sign_in_at&quot; = ?, &quot;last_sign_in_ip&quot; = ?, &quot;current_sign_in_ip&quot; = ?, &quot;sign_in_count&quot; = ?, &quot;updated_at&quot; = ? WHERE &quot;users&quot;.&quot;id&quot; = ?  [[&quot;last_sign_in_at&quot;, &quot;2016-03-24 11:38:44.456497&quot;], [&quot;current_sign_in_at&quot;, &quot;2016-03-24 11:38:44.456497&quot;], [&quot;last_sign_in_ip&quot;, &quot;127.0.0.1&quot;], [&quot;current_sign_in_ip&quot;, &quot;127.0.0.1&quot;], [&quot;sign_in_count&quot;, 1], [&quot;updated_at&quot;, &quot;2016-03-24 11:38:44.457612&quot;], [&quot;id&quot;, 1]]
+[1m[36m (164.8ms)[0m  [1mcommit transaction[0m</pre>
+
+<p>Redirected to <a
+href="http://localhost:3000/admin">localhost:3000/admin</a>/ Completed 302
+Found in 1066ms (ActiveRecord: 167.0ms)</p>
+
+<p>Started GET “/admin/” for 127.0.0.1 at 2016-03-24 12:38:45 +0100 Processing
+by Upmin::DashboardController#index as HTML</p>
+
+<pre>[1m[35mUser Load (0.3ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1  [[&quot;id&quot;, 1]]
+[1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT  &quot;restaurants&quot;.* FROM &quot;restaurants&quot;  ORDER BY date(created_at) DESC LIMIT 1[0m
+[1m[35mRestaurant Load (0.3ms)[0m  SELECT  &quot;restaurants&quot;.* FROM &quot;restaurants&quot;  ORDER BY date(created_at) ASC LIMIT 1
+[1m[36mCACHE (0.0ms)[0m  [1mSELECT  &quot;restaurants&quot;.* FROM &quot;restaurants&quot;  ORDER BY date(created_at) DESC LIMIT 1[0m
+[1m[35mCACHE (0.0ms)[0m  SELECT  &quot;restaurants&quot;.* FROM &quot;restaurants&quot;  ORDER BY date(created_at) ASC LIMIT 1
+[1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) AS count_all, date(created_at) AS date_created_at FROM &quot;restaurants&quot; WHERE (&quot;restaurants&quot;.&quot;created_at&quot; IS NOT NULL) GROUP BY date(created_at)  ORDER BY date(created_at) ASC[0m
+[1m[35mCACHE (0.0ms)[0m  SELECT  &quot;restaurants&quot;.* FROM &quot;restaurants&quot;  ORDER BY date(created_at) DESC LIMIT 1
+[1m[36mCACHE (0.0ms)[0m  [1mSELECT  &quot;restaurants&quot;.* FROM &quot;restaurants&quot;  ORDER BY date(created_at) ASC LIMIT 1[0m
+[1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM &quot;restaurants&quot;
+[1m[36mUser Load (0.2ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot;  ORDER BY date(created_at) DESC LIMIT 1[0m
+[1m[35mUser Load (0.2ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot;  ORDER BY date(created_at) ASC LIMIT 1
+[1m[36mCACHE (0.0ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot;  ORDER BY date(created_at) DESC LIMIT 1[0m
+[1m[35mCACHE (0.0ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot;  ORDER BY date(created_at) ASC LIMIT 1
+[1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) AS count_all, date(created_at) AS date_created_at FROM &quot;users&quot; WHERE (&quot;users&quot;.&quot;created_at&quot; IS NOT NULL) GROUP BY date(created_at)  ORDER BY date(created_at) ASC[0m
+[1m[35mCACHE (0.0ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot;  ORDER BY date(created_at) DESC LIMIT 1
+[1m[36mCACHE (0.0ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot;  ORDER BY date(created_at) ASC LIMIT 1[0m
+[1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM &quot;users&quot;
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/upmin/dashboard/_chart.html.haml (33.4ms)
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/upmin/dashboard/index.html.haml within layouts/upmin/application (43.8ms)
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/layouts/upmin/_navbar.html.haml (21.2ms)</pre>
+
+<p>Completed 200 OK in 635ms (Views: 586.5ms | ActiveRecord: 2.6ms)</p>
+
+<p>Started GET “/admin/m/Restaurant” for 127.0.0.1 at 2016-03-24 12:38:54
++0100 Processing by Upmin::ModelsController#search as HTML</p>
+
+<pre>Parameters: {&quot;klass&quot;=&gt;&quot;Restaurant&quot;}
+[1m[36mUser Load (0.1ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35m (0.3ms)[0m  SELECT DISTINCT COUNT(DISTINCT &quot;restaurants&quot;.&quot;id&quot;) FROM &quot;restaurants&quot;
+[1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  DISTINCT &quot;restaurants&quot;.* FROM &quot;restaurants&quot; LIMIT 30 OFFSET 0[0m
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/upmin/partials/search_results/_results.html.haml (13.0ms)
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/upmin/partials/search_boxes/_ransack_search_box.html.haml (54.4ms)
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/upmin/models/search.html.haml within layouts/upmin/application (122.5ms)
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/layouts/upmin/_navbar.html.haml (18.5ms)</pre>
+
+<p>Completed 200 OK in 228ms (Views: 222.0ms | ActiveRecord: 0.6ms)</p>
+
+<p>Started GET “/admin/m/Restaurant/new” for 127.0.0.1 at 2016-03-24 12:39:00
++0100 Processing by Upmin::ModelsController#new as HTML</p>
+
+<pre>Parameters: {&quot;klass&quot;=&gt;&quot;Restaurant&quot;}
+[1m[35mUser Load (0.1ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1  [[&quot;id&quot;, 1]]
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/upmin/partials/attributes/_integer.html.haml (4.3ms)
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/upmin/partials/attributes/_string.html.haml (8.3ms)
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/upmin/partials/attributes/_string.html.haml (1.0ms)
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/upmin/partials/attributes/_string.html.haml (0.9ms)
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/upmin/partials/attributes/_string.html.haml (0.9ms)
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/upmin/partials/attributes/_string.html.haml (1.0ms)
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/upmin/partials/attributes/_datetime.html.haml (11.6ms)
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/upmin/partials/attributes/_datetime.html.haml (0.5ms)
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/upmin/partials/models/_new_model.html.haml (152.4ms)
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/upmin/models/new.html.haml within layouts/upmin/application (204.3ms)
+Rendered /home/michal/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/upmin-admin-0.1.3/app/views/layouts/upmin/_navbar.html.haml (15.1ms)</pre>
+
+<p>Completed 200 OK in 280ms (Views: 275.0ms | ActiveRecord: 0.1ms)</p>
+
+<pre>[1m[36m (251.3ms)[0m  [1mCREATE TABLE &quot;restaurants&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;name&quot; varchar, &quot;description&quot; varchar, &quot;logo&quot; varchar, &quot;phone&quot; varchar, &quot;address&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL) [0m
+[1m[35m (206.1ms)[0m  CREATE TABLE &quot;users&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;email&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;encrypted_password&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;reset_password_token&quot; varchar, &quot;reset_password_sent_at&quot; datetime, &quot;remember_created_at&quot; datetime, &quot;sign_in_count&quot; integer DEFAULT 0 NOT NULL, &quot;current_sign_in_at&quot; datetime, &quot;last_sign_in_at&quot; datetime, &quot;current_sign_in_ip&quot; varchar, &quot;last_sign_in_ip&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL, &quot;name&quot; varchar, &quot;role&quot; integer) 
+[1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+[1m[35m (197.8ms)[0m  CREATE UNIQUE INDEX &quot;index_users_on_email&quot; ON &quot;users&quot; (&quot;email&quot;)
+[1m[36m (0.1ms)[0m  [1m            SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;</pre>
+
+<p>[0m</p>
+
+<pre>[1m[35m (197.8ms)[0m  CREATE UNIQUE INDEX &quot;index_users_on_reset_password_token&quot; ON &quot;users&quot; (&quot;reset_password_token&quot;)
+[1m[36m (184.7ms)[0m  [1mCREATE TABLE &quot;schema_migrations&quot; (&quot;version&quot; varchar NOT NULL) [0m
+[1m[35m (165.3ms)[0m  CREATE UNIQUE INDEX &quot;unique_schema_migrations&quot; ON &quot;schema_migrations&quot; (&quot;version&quot;)
+[1m[36m (0.3ms)[0m  [1mSELECT version FROM &quot;schema_migrations&quot;[0m
+[1m[35m (131.8ms)[0m  INSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324101756&#39;)
+[1m[36m (132.5ms)[0m  [1mINSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093848&#39;)[0m
+[1m[35m (165.8ms)[0m  INSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093853&#39;)
+[1m[36m (188.0ms)[0m  [1mINSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093904&#39;)[0m
+[1m[35m (155.0ms)[0m  CREATE TABLE &quot;restaurants&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;name&quot; varchar, &quot;description&quot; varchar, &quot;logo&quot; varchar, &quot;phone&quot; varchar, &quot;address&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL) 
+[1m[36m (186.7ms)[0m  [1mCREATE TABLE &quot;users&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;email&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;encrypted_password&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;reset_password_token&quot; varchar, &quot;reset_password_sent_at&quot; datetime, &quot;remember_created_at&quot; datetime, &quot;sign_in_count&quot; integer DEFAULT 0 NOT NULL, &quot;current_sign_in_at&quot; datetime, &quot;last_sign_in_at&quot; datetime, &quot;current_sign_in_ip&quot; varchar, &quot;last_sign_in_ip&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL, &quot;name&quot; varchar, &quot;role&quot; integer) [0m
+[1m[35m (0.2ms)[0m  select sqlite_version(*)
+[1m[36m (186.2ms)[0m  [1mCREATE UNIQUE INDEX &quot;index_users_on_email&quot; ON &quot;users&quot; (&quot;email&quot;)[0m
+[1m[35m (0.1ms)[0m              SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+
+[1m[36m (164.8ms)[0m  [1mCREATE UNIQUE INDEX &quot;index_users_on_reset_password_token&quot; ON &quot;users&quot; (&quot;reset_password_token&quot;)[0m
+[1m[35m (209.5ms)[0m  CREATE TABLE &quot;schema_migrations&quot; (&quot;version&quot; varchar NOT NULL) 
+[1m[36m (165.3ms)[0m  [1mCREATE UNIQUE INDEX &quot;unique_schema_migrations&quot; ON &quot;schema_migrations&quot; (&quot;version&quot;)[0m
+[1m[35m (0.1ms)[0m  SELECT version FROM &quot;schema_migrations&quot;
+[1m[36m (187.4ms)[0m  [1mINSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324101756&#39;)[0m
+[1m[35m (176.8ms)[0m  INSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093848&#39;)
+[1m[36m (187.8ms)[0m  [1mINSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093853&#39;)[0m
+[1m[35m (167.7ms)[0m  INSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093904&#39;)
+[1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[35mUser Load (0.5ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = ? LIMIT 1  [[&quot;email&quot;, &quot;admin@admin.com&quot;]]
+[1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = &#39;admin@admin.com&#39; LIMIT 1
+[1m[36mSQL (0.6ms)[0m  [1mINSERT INTO &quot;users&quot; (&quot;email&quot;, &quot;encrypted_password&quot;, &quot;role&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?, ?)[0m  [[&quot;email&quot;, &quot;admin@admin.com&quot;], [&quot;encrypted_password&quot;, &quot;$2a$10$fHgUBSLZ2tzamBxIIN2tP.opS8yU/gm7JZ6MvNXdf6JKrhUfy9nK.&quot;], [&quot;role&quot;, 2], [&quot;created_at&quot;, &quot;2016-03-24 11:57:18.957144&quot;], [&quot;updated_at&quot;, &quot;2016-03-24 11:57:18.957144&quot;]]
+[1m[35m (138.6ms)[0m  commit transaction
+[1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1m[35m (0.1ms)[0m  commit transaction
+[1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1m[35mSQL (0.3ms)[0m  INSERT INTO &quot;restaurants&quot; (&quot;name&quot;, &quot;description&quot;, &quot;phone&quot;, &quot;address&quot;, &quot;logo&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?, ?, ?, ?)  [[&quot;name&quot;, &quot;Tropico&quot;], [&quot;description&quot;, &quot;Witamy serdecznie na naszej stronie, na której możecie zamówić ulubione dania on-line jak i telefonicznie.\n\n  Nasze menu składa się z najpopularniejszych potraw kuchni polskiej, włoskiej oraz tureckiej.\n  Wszystkie nasz potrawy przygotowywane są z starannie dobranych składników tak, aby zachwycać świeżością i smakiem.&quot;], [&quot;phone&quot;, &quot;61 877 55 66&quot;], [&quot;address&quot;, &quot;PIZZA POZNAŃ RATAJE \n  ul.Kórnicka 24&quot;], [&quot;logo&quot;, &quot;logo.png&quot;], [&quot;created_at&quot;, &quot;2016-03-24 11:57:19.601675&quot;], [&quot;updated_at&quot;, &quot;2016-03-24 11:57:19.601675&quot;]]
+[1m[36m (210.7ms)[0m  [1mcommit transaction[0m
+[1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[35mUser Load (0.3ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = ? LIMIT 1  [[&quot;email&quot;, &quot;admin@admin.com&quot;]]
+[1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+[1m[35mSQL (0.5ms)[0m  INSERT INTO &quot;restaurants&quot; (&quot;name&quot;, &quot;description&quot;, &quot;phone&quot;, &quot;address&quot;, &quot;logo&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?, ?, ?, ?)  [[&quot;name&quot;, &quot;Tropico&quot;], [&quot;description&quot;, &quot;Witamy serdecznie na naszej stronie, na której możecie zamówić ulubione dania on-line jak i telefonicznie.\n\n  Nasze menu składa się z najpopularniejszych potraw kuchni polskiej, włoskiej oraz tureckiej.\n  Wszystkie nasz potrawy przygotowywane są z starannie dobranych składników tak, aby zachwycać świeżością i smakiem.&quot;], [&quot;phone&quot;, &quot;61 877 55 66&quot;], [&quot;address&quot;, &quot;PIZZA POZNAŃ RATAJE \n  ul.Kórnicka 24&quot;], [&quot;logo&quot;, &quot;logo.png&quot;], [&quot;created_at&quot;, &quot;2016-03-24 13:07:40.968524&quot;], [&quot;updated_at&quot;, &quot;2016-03-24 13:07:40.968524&quot;]]
+[1m[36m (166.4ms)[0m  [1mcommit transaction[0m
+[1m[35m (0.1ms)[0m  begin transaction
+[1m[36mSQL (0.2ms)[0m  [1mINSERT INTO &quot;restaurants&quot; (&quot;name&quot;, &quot;description&quot;, &quot;phone&quot;, &quot;address&quot;, &quot;logo&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [[&quot;name&quot;, &quot;Weranda&quot;], [&quot;description&quot;, &quot;Restauracje Weranda to wyjątkowy koncept w gastronomii, świat wyszukanych smaków połączony z niesamowitymi wrażeniami estetycznymi. Już od 15 lat cenimy nie tylko doskonałą kuchnię, ale również przyjemną i przytulną atmosferę. Wszechobecna zieleń i dopracowane w najmniejszym szczególe dekoracje towarzyszą każdej naszej przestrzeni, umilając oczekiwanie na świeżo przyrządzane specjały.&quot;], [&quot;phone&quot;, &quot;61 853 25 87&quot;], [&quot;address&quot;, &quot;Świętosławska 10, 61-870 Poznań&quot;], [&quot;logo&quot;, &quot;1.mWTPT_sld.jpg&quot;], [&quot;created_at&quot;, &quot;2016-03-24 13:07:42.238449&quot;], [&quot;updated_at&quot;, &quot;2016-03-24 13:07:42.238449&quot;]]
+[1m[35m (178.5ms)[0m  commit transaction</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 14:12:41 +0100 Processing by <a
+href="../RestaurantsController.html#method-i-index">RestaurantsController#index</a>
+as HTML</p>
+
+<pre>[1m[36mRestaurant Load (0.4ms)[0m  [1mSELECT &quot;restaurants&quot;.* FROM &quot;restaurants&quot;[0m
+Rendered restaurants/index.html.haml within layouts/application (12.5ms)
+Rendered layouts/_navigation_links.html.haml (0.6ms)
+Rendered layouts/_navigation.html.haml (3.7ms)
+Rendered layouts/_messages.html.haml (1.6ms)</pre>
+
+<p>Completed 200 OK in 146ms (Views: 145.7ms | ActiveRecord: 0.4ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 14:12:56 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m</pre>
+
+<p>Processing by <a
+href="../RestaurantsController.html#method-i-index">RestaurantsController#index</a>
+as HTML</p>
+
+<pre>[1m[35mRestaurant Load (0.2ms)[0m  SELECT &quot;restaurants&quot;.* FROM &quot;restaurants&quot;
+Rendered restaurants/index.html.haml within layouts/application (21.5ms)
+Rendered layouts/_navigation_links.html.haml (0.6ms)
+Rendered layouts/_navigation.html.haml (3.8ms)
+Rendered layouts/_messages.html.haml (1.4ms)</pre>
+
+<p>Completed 200 OK in 578ms (Views: 576.6ms | ActiveRecord: 0.6ms)</p>
+
+<pre>[1m[36m (199.1ms)[0m  [1mCREATE TABLE &quot;restaurants&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;name&quot; varchar, &quot;description&quot; varchar, &quot;logo&quot; varchar, &quot;phone&quot; varchar, &quot;address&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL) [0m
+[1m[35m (216.6ms)[0m  CREATE TABLE &quot;users&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;email&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;encrypted_password&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;reset_password_token&quot; varchar, &quot;reset_password_sent_at&quot; datetime, &quot;remember_created_at&quot; datetime, &quot;sign_in_count&quot; integer DEFAULT 0 NOT NULL, &quot;current_sign_in_at&quot; datetime, &quot;last_sign_in_at&quot; datetime, &quot;current_sign_in_ip&quot; varchar, &quot;last_sign_in_ip&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL, &quot;name&quot; varchar, &quot;role&quot; integer) 
+[1m[36m (0.6ms)[0m  [1mselect sqlite_version(*)[0m
+[1m[35m (174.4ms)[0m  CREATE UNIQUE INDEX &quot;index_users_on_email&quot; ON &quot;users&quot; (&quot;email&quot;)
+[1m[36m (0.2ms)[0m  [1m            SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;</pre>
+
+<p>[0m</p>
+
+<pre>[1m[35m (152.5ms)[0m  CREATE UNIQUE INDEX &quot;index_users_on_reset_password_token&quot; ON &quot;users&quot; (&quot;reset_password_token&quot;)
+[1m[36m (163.4ms)[0m  [1mCREATE TABLE &quot;schema_migrations&quot; (&quot;version&quot; varchar NOT NULL) [0m
+[1m[35m (197.4ms)[0m  CREATE UNIQUE INDEX &quot;unique_schema_migrations&quot; ON &quot;schema_migrations&quot; (&quot;version&quot;)
+[1m[36m (0.1ms)[0m  [1mSELECT version FROM &quot;schema_migrations&quot;[0m
+[1m[35m (176.5ms)[0m  INSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324101756&#39;)
+[1m[36m (200.7ms)[0m  [1mINSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093848&#39;)[0m
+[1m[35m (176.6ms)[0m  INSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093853&#39;)
+[1m[36m (198.4ms)[0m  [1mINSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093904&#39;)[0m
+[1m[35m (131.3ms)[0m  CREATE TABLE &quot;restaurants&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;name&quot; varchar, &quot;description&quot; varchar, &quot;logo&quot; varchar, &quot;phone&quot; varchar, &quot;address&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL) 
+[1m[36m (131.0ms)[0m  [1mCREATE TABLE &quot;users&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;email&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;encrypted_password&quot; varchar DEFAULT &#39;&#39; NOT NULL, &quot;reset_password_token&quot; varchar, &quot;reset_password_sent_at&quot; datetime, &quot;remember_created_at&quot; datetime, &quot;sign_in_count&quot; integer DEFAULT 0 NOT NULL, &quot;current_sign_in_at&quot; datetime, &quot;last_sign_in_at&quot; datetime, &quot;current_sign_in_ip&quot; varchar, &quot;last_sign_in_ip&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL, &quot;name&quot; varchar, &quot;role&quot; integer) [0m
+[1m[35m (0.1ms)[0m  select sqlite_version(*)
+[1m[36m (154.2ms)[0m  [1mCREATE UNIQUE INDEX &quot;index_users_on_email&quot; ON &quot;users&quot; (&quot;email&quot;)[0m
+[1m[35m (0.1ms)[0m              SELECT sql
+          FROM sqlite_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+          UNION ALL
+          SELECT sql
+          FROM sqlite_temp_master
+          WHERE name=&#39;index_users_on_email&#39; AND type=&#39;index&#39;
+
+[1m[36m (219.6ms)[0m  [1mCREATE UNIQUE INDEX &quot;index_users_on_reset_password_token&quot; ON &quot;users&quot; (&quot;reset_password_token&quot;)[0m
+[1m[35m (176.2ms)[0m  CREATE TABLE &quot;schema_migrations&quot; (&quot;version&quot; varchar NOT NULL) 
+[1m[36m (198.3ms)[0m  [1mCREATE UNIQUE INDEX &quot;unique_schema_migrations&quot; ON &quot;schema_migrations&quot; (&quot;version&quot;)[0m
+[1m[35m (0.2ms)[0m  SELECT version FROM &quot;schema_migrations&quot;
+[1m[36m (154.4ms)[0m  [1mINSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324101756&#39;)[0m
+[1m[35m (200.2ms)[0m  INSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093848&#39;)
+[1m[36m (198.5ms)[0m  [1mINSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093853&#39;)[0m
+[1m[35m (165.6ms)[0m  INSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20160324093904&#39;)
+[1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[35mUser Load (0.3ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = ? LIMIT 1  [[&quot;email&quot;, &quot;admin@admin.com&quot;]]
+[1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;email&quot; = &#39;admin@admin.com&#39; LIMIT 1
+[1m[36mSQL (0.3ms)[0m  [1mINSERT INTO &quot;users&quot; (&quot;email&quot;, &quot;encrypted_password&quot;, &quot;role&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?, ?)[0m  [[&quot;email&quot;, &quot;admin@admin.com&quot;], [&quot;encrypted_password&quot;, &quot;$2a$10$aPjKL0NOMNlozjsklxfncOgCmO7.tgwWRrn5K7AOztQ1bmBZwhgZS&quot;], [&quot;role&quot;, 2], [&quot;created_at&quot;, &quot;2016-03-24 13:13:15.636121&quot;], [&quot;updated_at&quot;, &quot;2016-03-24 13:13:15.636121&quot;]]
+[1m[35m (173.1ms)[0m  commit transaction
+[1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+[1m[35m (0.2ms)[0m  commit transaction
+[1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1m[35mSQL (0.7ms)[0m  INSERT INTO &quot;restaurants&quot; (&quot;name&quot;, &quot;description&quot;, &quot;phone&quot;, &quot;address&quot;, &quot;logo&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?, ?, ?, ?)  [[&quot;name&quot;, &quot;Tropico&quot;], [&quot;description&quot;, &quot;Witamy serdecznie na naszej stronie, na której możecie zamówić ulubione dania on-line jak i telefonicznie.\n\n  Nasze menu składa się z najpopularniejszych potraw kuchni polskiej, włoskiej oraz tureckiej.\n  Wszystkie nasz potrawy przygotowywane są z starannie dobranych składników tak, aby zachwycać świeżością i smakiem.&quot;], [&quot;phone&quot;, &quot;61 877 55 66&quot;], [&quot;address&quot;, &quot;PIZZA POZNAŃ RATAJE \n  ul.Kórnicka 24&quot;], [&quot;logo&quot;, &quot;logo.png&quot;], [&quot;created_at&quot;, &quot;2016-03-24 13:13:17.419331&quot;], [&quot;updated_at&quot;, &quot;2016-03-24 13:13:17.419331&quot;]]
+[1m[36m (169.3ms)[0m  [1mcommit transaction[0m
+[1m[35m (0.1ms)[0m  begin transaction
+[1m[36mSQL (0.2ms)[0m  [1mINSERT INTO &quot;restaurants&quot; (&quot;name&quot;, &quot;description&quot;, &quot;phone&quot;, &quot;address&quot;, &quot;logo&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [[&quot;name&quot;, &quot;Weranda&quot;], [&quot;description&quot;, &quot;Restauracje Weranda to wyjątkowy koncept w gastronomii, świat wyszukanych smaków połączony z niesamowitymi wrażeniami estetycznymi. Już od 15 lat cenimy nie tylko doskonałą kuchnię, ale również przyjemną i przytulną atmosferę. Wszechobecna zieleń i dopracowane w najmniejszym szczególe dekoracje towarzyszą każdej naszej przestrzeni, umilając oczekiwanie na świeżo przyrządzane specjały.&quot;], [&quot;phone&quot;, &quot;61 853 25 87&quot;], [&quot;address&quot;, &quot;Świętosławska 10, 61-870 Poznań&quot;], [&quot;logo&quot;, &quot;1.mWTPT_sld.jpg&quot;], [&quot;created_at&quot;, &quot;2016-03-24 13:13:18.323993&quot;], [&quot;updated_at&quot;, &quot;2016-03-24 13:13:18.323993&quot;]]
+[1m[35m (226.4ms)[0m  commit transaction</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 14:14:59 +0100 Processing by <a
+href="../RestaurantsController.html#method-i-index">RestaurantsController#index</a>
+as HTML</p>
+
+<pre>[1m[36mRestaurant Load (0.3ms)[0m  [1mSELECT &quot;restaurants&quot;.* FROM &quot;restaurants&quot;[0m
+Rendered restaurants/index.html.haml within layouts/application (4.0ms)
+Rendered layouts/_navigation_links.html.haml (0.1ms)
+Rendered layouts/_navigation.html.haml (1.0ms)
+Rendered layouts/_messages.html.haml (0.2ms)</pre>
+
+<p>Completed 200 OK in 90ms (Views: 89.8ms | ActiveRecord: 0.3ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 14:15:04 +0100 Processing by <a
+href="../RestaurantsController.html#method-i-index">RestaurantsController#index</a>
+as HTML</p>
+
+<pre>[1m[35mRestaurant Load (0.2ms)[0m  SELECT &quot;restaurants&quot;.* FROM &quot;restaurants&quot;
+Rendered restaurants/index.html.haml within layouts/application (3.3ms)
+Rendered layouts/_navigation_links.html.haml (0.1ms)
+Rendered layouts/_navigation.html.haml (0.9ms)
+Rendered layouts/_messages.html.haml (0.1ms)</pre>
+
+<p>Completed 200 OK in 67ms (Views: 66.7ms | ActiveRecord: 0.2ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-03-24 14:16:20 +0100</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m</pre>
+
+<p>Processing by <a
+href="../RestaurantsController.html#method-i-index">RestaurantsController#index</a>
+as HTML</p>
+
+<pre>[1m[35mRestaurant Load (0.2ms)[0m  SELECT &quot;restaurants&quot;.* FROM &quot;restaurants&quot;
+Rendered restaurants/index.html.haml within layouts/application (20.1ms)
+Rendered layouts/_navigation_links.html.haml (0.6ms)
+Rendered layouts/_navigation.html.haml (4.0ms)
+Rendered layouts/_messages.html.haml (1.5ms)</pre>
+
+<p>Completed 200 OK in 458ms (Views: 456.9ms | ActiveRecord: 0.7ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2016-04-18 14:13:10 +0200</p>
+
+<pre>[1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m</pre>
+
+<p>Processing by <a
+href="../RestaurantsController.html#method-i-index">RestaurantsController#index</a>
+as HTML</p>
+
+<pre>[1m[35mRestaurant Load (0.3ms)[0m  SELECT &quot;restaurants&quot;.* FROM &quot;restaurants&quot;
+Rendered restaurants/index.html.haml within layouts/application (19.8ms)</pre>
+
+<p>WARNING on line 18, column 11 of
+/home/michal/.rvm/gems/ruby-2.0.0-p247/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `yellow&#39; in
+interpolation here. It may end up represented as ffff00, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “yellow”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 18, column 11 of
+/home/michal/.rvm/gems/ruby-2.0.0-p247/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `orange&#39; in
+interpolation here. It may end up represented as ffa500, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “orange”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 18, column 11 of
+/home/michal/.rvm/gems/ruby-2.0.0-p247/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `red&#39; in
+interpolation here. It may end up represented as ff0000, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “red”). If you really want to use the color value here, use
+`“” + $name&#39;.</p>
+
+<p>WARNING on line 18, column 11 of
+/home/michal/.rvm/gems/ruby-2.0.0-p247/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `purple&#39; in
+interpolation here. It may end up represented as #800080, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “purple”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 18, column 11 of
+/home/michal/.rvm/gems/ruby-2.0.0-p247/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `green&#39; in
+interpolation here. It may end up represented as #008000, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “green”). If you really want to use the color value here, use
+`“” + $name&#39;.</p>
+
+<p>WARNING on line 32, column 7 of
+/home/michal/.rvm/gems/ruby-2.0.0-p247/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `yellow&#39; in
+interpolation here. It may end up represented as ffff00, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “yellow”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 32, column 7 of
+/home/michal/.rvm/gems/ruby-2.0.0-p247/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `orange&#39; in
+interpolation here. It may end up represented as ffa500, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “orange”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 32, column 7 of
+/home/michal/.rvm/gems/ruby-2.0.0-p247/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `red&#39; in
+interpolation here. It may end up represented as ff0000, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “red”). If you really want to use the color value here, use
+`“” + $name&#39;.</p>
+
+<p>WARNING on line 32, column 7 of
+/home/michal/.rvm/gems/ruby-2.0.0-p247/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `purple&#39; in
+interpolation here. It may end up represented as #800080, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “purple”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 32, column 7 of
+/home/michal/.rvm/gems/ruby-2.0.0-p247/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/base.css.scss:
+You probably don&#39;t mean to use the color value `green&#39; in
+interpolation here. It may end up represented as #008000, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “green”). If you really want to use the color value here, use
+`“” + $name&#39;.</p>
+
+<p>WARNING on line 20, column 7 of
+/home/michal/.rvm/gems/ruby-2.0.0-p247/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/instances.css.scss:
+You probably don&#39;t mean to use the color value `yellow&#39; in
+interpolation here. It may end up represented as ffff00, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “yellow”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 20, column 7 of
+/home/michal/.rvm/gems/ruby-2.0.0-p247/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/instances.css.scss:
+You probably don&#39;t mean to use the color value `orange&#39; in
+interpolation here. It may end up represented as ffa500, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “orange”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 20, column 7 of
+/home/michal/.rvm/gems/ruby-2.0.0-p247/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/instances.css.scss:
+You probably don&#39;t mean to use the color value `red&#39; in
+interpolation here. It may end up represented as ff0000, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “red”). If you really want to use the color value here, use
+`“” + $name&#39;.</p>
+
+<p>WARNING on line 20, column 7 of
+/home/michal/.rvm/gems/ruby-2.0.0-p247/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/instances.css.scss:
+You probably don&#39;t mean to use the color value `purple&#39; in
+interpolation here. It may end up represented as #800080, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “purple”). If you really want to use the color value here,
+use `“” + $name&#39;.</p>
+
+<p>WARNING on line 20, column 7 of
+/home/michal/.rvm/gems/ruby-2.0.0-p247/gems/upmin-admin-0.1.3/app/assets/stylesheets/upmin/instances.css.scss:
+You probably don&#39;t mean to use the color value `green&#39; in
+interpolation here. It may end up represented as #008000, which will likely
+produce invalid CSS. Always quote color names when using them as strings
+(for example, “green”). If you really want to use the color value here, use
+`“” + $name&#39;.</p>
+
+<pre>Rendered layouts/_nav_links_for_auth.html.haml (6.6ms)
+Rendered layouts/_navigation.html.haml (10.1ms)
+Rendered layouts/_messages.html.haml (1.6ms)</pre>
+
+<p>Completed 200 OK in 5302ms (Views: 5300.7ms | ActiveRecord: 0.7ms)</p>
+
+<p>Started GET “/js/jquery.js” for 127.0.0.1 at 2016-04-18 14:14:01 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/js/jquery.js”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.9ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.3ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (528.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (552.0ms)</pre>
+
+<p>Started GET “/js/darkfish.js” for 127.0.0.1 at 2016-04-18 14:14:02 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/js/darkfish.js”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (43.7ms)</pre>
+
+<p>Started GET “/css/fonts.css” for 127.0.0.1 at 2016-04-18 14:14:02 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/css/fonts.css”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (44.0ms)</pre>
+
+<p>Started GET “/css/rdoc.css” for 127.0.0.1 at 2016-04-18 14:14:02 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/css/rdoc.css”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (61.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (31.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (61.5ms)</pre>
+
+<p>Started GET “/js/jquery.js” for 127.0.0.1 at 2016-04-18 14:14:37 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/js/jquery.js”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (32.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (57.8ms)</pre>
+
+<p>Started GET “/css/fonts.css” for 127.0.0.1 at 2016-04-18 14:14:37 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/css/fonts.css”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.1ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (48.8ms)</pre>
+
+<p>Started GET “/js/darkfish.js” for 127.0.0.1 at 2016-04-18 14:14:37 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/js/darkfish.js”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (46.1ms)</pre>
+
+<p>Started GET “/css/rdoc.css” for 127.0.0.1 at 2016-04-18 14:14:37 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/css/rdoc.css”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (47.6ms)</pre>
+
+<p>Started GET “/css/fonts.css” for 127.0.0.1 at 2016-04-18 14:14:37 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/css/fonts.css”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.9ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.2ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (46.8ms)</pre>
+
+<p>Started GET “/doc/css” for 127.0.0.1 at 2016-04-18 14:14:55 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/doc/css”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.2ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (46.8ms)</pre>
+
+<p>Started GET “/js/jquery.js” for 127.0.0.1 at 2016-04-18 14:15:13 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/js/jquery.js”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (62.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (29.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (56.6ms)</pre>
+
+<p>Started GET “/js/darkfish.js” for 127.0.0.1 at 2016-04-18 14:15:14 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/js/darkfish.js”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.2ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.2ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (48.5ms)</pre>
+
+<p>Started GET “/css/rdoc.css” for 127.0.0.1 at 2016-04-18 14:15:14 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/css/rdoc.css”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (14.9ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (29.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (57.4ms)</pre>
+
+<p>Started GET “/css/fonts.css” for 127.0.0.1 at 2016-04-18 14:15:14 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/css/fonts.css”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.2ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (46.5ms)</pre>
+
+<p>Started GET “/js/jquery.js” for 127.0.0.1 at 2016-04-18 14:15:17 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/js/jquery.js”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (59.3ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (30.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (60.4ms)</pre>
+
+<p>Started GET “/js/darkfish.js” for 127.0.0.1 at 2016-04-18 14:15:18 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/js/darkfish.js”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (43.2ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (41.3ms)</pre>
+
+<p>Started GET “/css/rdoc.css” for 127.0.0.1 at 2016-04-18 14:15:18 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/css/rdoc.css”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.9ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (46.8ms)</pre>
+
+<p>Started GET “/css/fonts.css” for 127.0.0.1 at 2016-04-18 14:15:18 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/css/fonts.css”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.2ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (44.3ms)</pre>
+
+<p>Started GET “/RestaurantsController.html” for 127.0.0.1 at 2016-04-18
+14:15:42 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET]
+“/RestaurantsController.html”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.9ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (42.1ms)</pre>
+
+<p>Started GET “/Restaurant.html” for 127.0.0.1 at 2016-04-18 14:15:47 +0200</p>
+
+<p>ActionController::RoutingError (No route matches [GET] “/Restaurant.html”):</p>
+
+<pre>actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch&#39;
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged&#39;
+activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged&#39;
+railties (4.2.6) lib/rails/rack/logger.rb:20:in `call&#39;
+quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call&#39;
+rack (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;
+rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;
+activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call&#39;
+rack (1.6.4) lib/rack/sendfile.rb:113:in `call&#39;
+railties (4.2.6) lib/rails/engine.rb:518:in `call&#39;
+railties (4.2.6) lib/rails/application.rb:165:in `call&#39;
+rack (1.6.4) lib/rack/lock.rb:17:in `call&#39;
+rack (1.6.4) lib/rack/content_length.rb:15:in `call&#39;
+rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run&#39;
+/home/michal/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread&#39;
+
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.1ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.9ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+Rendered /home/michal/.rvm/gems/ruby-2.0.0-p247/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (50.9ms)</pre>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

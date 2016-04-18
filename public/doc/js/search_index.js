@@ -1,0 +1,1 @@
+var search_data = {"index":{"searchIndex":["restaurant","user","set_default_role()"],"longSearchIndex":["restaurant","user","user#set_default_role()"],"info":[["Restaurant","","Restaurant.html","",""],["User","","User.html","",""],["set_default_role","User","User.html#method-i-set_default_role","()",""]]}}

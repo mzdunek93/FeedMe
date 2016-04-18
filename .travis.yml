@@ -7,5 +7,3 @@ deploy:
   app: sheltered-dawn-87245
 script:
   - bundle exec rake rdoc
-  - git add -A
-  - git commit -m "Add documentation"
