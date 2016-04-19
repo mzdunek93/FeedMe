@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 
-<title>class User - RDoc Documentation</title>
+<title>class RestaurantsController - RDoc Documentation</title>
 
 <script type="text/javascript">
   var rdoc_rel_prefix = "./";
@@ -58,7 +58,7 @@
   <h3>Parent</h3>
 
   
-  <p class="link">ActiveRecord::Base
+  <p class="link">ApplicationController
   
 </div>
 
@@ -70,7 +70,7 @@
 
   <ul class="link-list" role="directory">
     
-    <li ><a href="#method-i-set_default_role">#set_default_role</a>
+    <li ><a href="#method-i-index">#index</a>
     
   </ul>
 </div>
@@ -78,14 +78,14 @@
   </div>
 </nav>
 
-<main role="main" aria-labelledby="class-User">
-  <h1 id="class-User" class="class">
-    class User
+<main role="main" aria-labelledby="class-RestaurantsController">
+  <h1 id="class-RestaurantsController" class="class">
+    class RestaurantsController
   </h1>
 
   <section class="description">
     
-<p>The class representing the <a href="User.html">User</a> model</p>
+<p>The controller for restaurants</p>
 
   </section>
 
@@ -108,10 +108,10 @@
        </header>
 
     
-      <div id="method-i-set_default_role" class="method-detail ">
+      <div id="method-i-index" class="method-detail ">
         
         <div class="method-heading">
-          <span class="method-name">set_default_role</span><span
+          <span class="method-name">index</span><span
             class="method-args">()</span>
           
           <span class="method-click-advice">click to toggle source</span>
@@ -121,16 +121,15 @@
 
         <div class="method-description">
           
-          <p>Function setting the default role executed immediately after initializing
-the object Sets the role to user unless otherwise set</p>
+          <p>The index action, displaying all the restaurants. Also the root path of the
+app</p>
           
           
 
           
-          <div class="method-source-code" id="set_default_role-source">
-            <pre><span class="ruby-comment"># File app/models/user.rb, line 12</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_default_role</span>
-  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">role</span> <span class="ruby-operator">||=</span> <span class="ruby-value">:user</span>
+          <div class="method-source-code" id="index-source">
+            <pre><span class="ruby-comment"># File app/controllers/restaurants_controller.rb, line 10</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">index</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
           

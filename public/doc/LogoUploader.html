@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 
-<title>class User - RDoc Documentation</title>
+<title>class LogoUploader - RDoc Documentation</title>
 
 <script type="text/javascript">
   var rdoc_rel_prefix = "./";
@@ -58,11 +58,22 @@
   <h3>Parent</h3>
 
   
-  <p class="link">ActiveRecord::Base
+  <p class="link">CarrierWave::Uploader::Base
   
 </div>
 
-    
+    <div id="includes-section" class="nav-section">
+  <h3>Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><span class="include">CarrierWave::MiniMagick</span>
+  
+  
+  </ul>
+</div>
+
     
     <!-- Method Quickref -->
 <div id="method-list-section" class="nav-section">
@@ -70,7 +81,7 @@
 
   <ul class="link-list" role="directory">
     
-    <li ><a href="#method-i-set_default_role">#set_default_role</a>
+    <li ><a href="#method-i-store_dir">#store_dir</a>
     
   </ul>
 </div>
@@ -78,14 +89,14 @@
   </div>
 </nav>
 
-<main role="main" aria-labelledby="class-User">
-  <h1 id="class-User" class="class">
-    class User
+<main role="main" aria-labelledby="class-LogoUploader">
+  <h1 id="class-LogoUploader" class="class">
+    class LogoUploader
   </h1>
 
   <section class="description">
     
-<p>The class representing the <a href="User.html">User</a> model</p>
+<p>The class defining the uploading of the restaurant logos</p>
 
   </section>
 
@@ -108,10 +119,10 @@
        </header>
 
     
-      <div id="method-i-set_default_role" class="method-detail ">
+      <div id="method-i-store_dir" class="method-detail ">
         
         <div class="method-heading">
-          <span class="method-name">set_default_role</span><span
+          <span class="method-name">store_dir</span><span
             class="method-args">()</span>
           
           <span class="method-click-advice">click to toggle source</span>
@@ -121,16 +132,16 @@
 
         <div class="method-description">
           
-          <p>Function setting the default role executed immediately after initializing
-the object Sets the role to user unless otherwise set</p>
+          <p>Override the directory where uploaded files will be stored. This is a
+sensible default for uploaders that are meant to be mounted:</p>
           
           
 
           
-          <div class="method-source-code" id="set_default_role-source">
-            <pre><span class="ruby-comment"># File app/models/user.rb, line 12</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_default_role</span>
-  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">role</span> <span class="ruby-operator">||=</span> <span class="ruby-value">:user</span>
+          <div class="method-source-code" id="store_dir-source">
+            <pre><span class="ruby-comment"># File app/uploaders/logo_uploader.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">store_dir</span>
+  <span class="ruby-node">&quot;uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}&quot;</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
           

@@ -64,7 +64,23 @@
 
     
     
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
     
+    <li ><a href="#method-i-address_present">#address_present</a>
+    
+    <li ><a href="#method-i-description_present">#description_present</a>
+    
+    <li ><a href="#method-i-name_present">#name_present</a>
+    
+    <li ><a href="#method-i-phone_present">#phone_present</a>
+    
+  </ul>
+</div>
+
   </div>
 </nav>
 
@@ -75,6 +91,8 @@
 
   <section class="description">
     
+<p>The class representing the <a href="Restaurant.html">Restaurant</a> model</p>
+
   </section>
 
   
@@ -90,6 +108,155 @@
     
 
     
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-address_present" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">address_present</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Validator for the address column Returns error if the address is empty</p>
+          
+          
+
+          
+          <div class="method-source-code" id="address_present-source">
+            <pre><span class="ruby-comment"># File app/models/restaurant.rb, line 46</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">address_present</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">address</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;&#39;</span>
+    <span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">:address</span>, <span class="ruby-string">&quot;Can&#39;t be empty&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-description_present" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">description_present</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Validator for the description column Returns error if the description is
+empty</p>
+          
+          
+
+          
+          <div class="method-source-code" id="description_present-source">
+            <pre><span class="ruby-comment"># File app/models/restaurant.rb, line 26</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">description_present</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">description</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;&#39;</span>
+    <span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">:description</span>, <span class="ruby-string">&quot;Can&#39;t be empty&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-name_present" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">name_present</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Validator for the name column Returns error if the name is empty</p>
+          
+          
+
+          
+          <div class="method-source-code" id="name_present-source">
+            <pre><span class="ruby-comment"># File app/models/restaurant.rb, line 16</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">name_present</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">name</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;&#39;</span>
+    <span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">:name</span>, <span class="ruby-string">&quot;Can&#39;t be empty&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-phone_present" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">phone_present</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Validator for the phone column Returns error if the phone is empty</p>
+          
+          
+
+          
+          <div class="method-source-code" id="phone_present-source">
+            <pre><span class="ruby-comment"># File app/models/restaurant.rb, line 36</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">phone_present</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">phone</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;&#39;</span>
+    <span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">:phone</span>, <span class="ruby-string">&quot;Can&#39;t be empty&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
   </section>
 </main>
 

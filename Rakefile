@@ -11,4 +11,7 @@ RDoc::Task.new do |rdoc|
   rdoc.rdoc_dir = "public/doc"
   rdoc.rdoc_files.include 'app/models/restaurant.rb'
   rdoc.rdoc_files.include 'app/models/user.rb'
+  rdoc.rdoc_files.include 'app/controllers/users_controller.rb'
+  rdoc.rdoc_files.include 'app/controllers/restaurants_controller.rb'
+  rdoc.rdoc_files.include 'app/uploaders/logo_uploader.rb'
 end
