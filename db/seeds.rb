@@ -27,3 +27,5 @@ Restaurant.create!(
   address: "Świętosławska 10, 61-870 Poznań",
   remote_logo_url: "https://d6zktcp1soofu.cloudfront.net/weranda-caffe-8600/1.mWTPT_sld.jpg"
 )
+
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
