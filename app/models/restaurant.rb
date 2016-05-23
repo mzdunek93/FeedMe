@@ -4,17 +4,19 @@
 class Restaurant < ActiveRecord::Base
 	mount_uploader :logo, LogoUploader
 
-	validates :name, presence: true
-	validates :description, presence: true
-	validates :phone, presence: true
-	validates :address, presence: true
+	validate :name_present
+	validate :description_present
+	validate :phone_present
+	validate :address_present
+
+	has_many :menu_items
 
   ##
   # Validator for the name column
   # Returns error if the name is empty
-  
+
   def name_present
-    if name == ''
+    if name.blank?
       errors.add(:name, "Can't be empty")
     end
   end
@@ -24,7 +26,7 @@ class Restaurant < ActiveRecord::Base
   # Returns error if the description is empty
 
   def description_present
-    if description == ''
+    if description.blank?
       errors.add(:description, "Can't be empty")
     end
   end
@@ -34,7 +36,7 @@ class Restaurant < ActiveRecord::Base
   # Returns error if the phone is empty
 
   def phone_present
-    if phone == ''
+    if phone.blank?
       errors.add(:phone, "Can't be empty")
     end
   end
@@ -44,7 +46,7 @@ class Restaurant < ActiveRecord::Base
   # Returns error if the address is empty
 
   def address_present
-    if address == ''
+    if address.blank?
       errors.add(:address, "Can't be empty")
     end
   end
