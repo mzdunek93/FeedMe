@@ -10,6 +10,7 @@ class Restaurant < ActiveRecord::Base
 	validate :address_present
 
 	has_many :menu_items
+	belongs_to :user
 
   ##
   # Validator for the name column

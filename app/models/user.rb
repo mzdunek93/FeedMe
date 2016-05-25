@@ -2,8 +2,10 @@
 # The class representing the User model
 
 class User < ActiveRecord::Base
-  enum role: [:user, :restaurant]
+  enum role: [:user, :restaurant, :admin]
   after_initialize :set_default_role, :if => :new_record?
+
+  has_one :restaurant
 
   ##
   # Function setting the default role executed immediately after initializing the object
