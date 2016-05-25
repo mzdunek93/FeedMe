@@ -4,7 +4,7 @@ rvm:
 deploy:
   provider: heroku
   api_key: a3b38fab-4ede-4462-8d90-d469d22d804e
-  app: sheltered-dawn-87245
+  app: feedme-io
 script:
   - rm -rf public/doc
   - bundle exec rake rdoc
