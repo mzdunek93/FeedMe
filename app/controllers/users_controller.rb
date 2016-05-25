@@ -56,11 +56,4 @@ class UsersController < ApplicationController
     end
   end
 
-  ##
-  # A function determining which attributes we can change in the user
-  
-  def secure_params
-    params.require(:user).permit(:role)
-  end
-
 end
