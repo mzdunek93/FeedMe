@@ -1,4 +1,4 @@
-class Menu_Item < ActiveRecord::Base
+class MenuItem < ActiveRecord::Base
   belongs_to :restaurant
 
 	validate :res_present
