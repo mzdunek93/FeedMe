@@ -8,7 +8,7 @@
 user = CreateAdminService.new.call
 puts 'CREATED ADMIN USER: ' << user.email
 
-Restaurant.create!(
+res1 = Restaurant.create!(
   name: "Tropico",
   description: "Witamy serdecznie na naszej stronie, na której możecie zamówić ulubione dania on-line jak i telefonicznie.
 
@@ -20,12 +20,42 @@ Restaurant.create!(
   remote_logo_url: "http://pizzatropico.eu/img/logo.png"
 )
 
-Restaurant.create!(
+res2 = Restaurant.create!(
   name: "Weranda",
   description: "Restauracje Weranda to wyjątkowy koncept w gastronomii, świat wyszukanych smaków połączony z niesamowitymi wrażeniami estetycznymi. Już od 15 lat cenimy nie tylko doskonałą kuchnię, ale również przyjemną i przytulną atmosferę. Wszechobecna zieleń i dopracowane w najmniejszym szczególe dekoracje towarzyszą każdej naszej przestrzeni, umilając oczekiwanie na świeżo przyrządzane specjały.",
   phone: "61 853 25 87",
   address: "Świętosławska 10, 61-870 Poznań",
   remote_logo_url: "https://d6zktcp1soofu.cloudfront.net/weranda-caffe-8600/1.mWTPT_sld.jpg"
+)
+
+menu1 = Menu_Item.create!(
+	name: "Pizza Margarita",
+	price: 14.50,
+	restaurant: res1
+)
+
+menu2 = Menu_Item.create!(
+	name: "Hamburger",
+	price: 11.99,
+	restaurant: res2
+)
+
+menu3 = Menu_Item.create!(
+	name: "Frytki",
+	price: 6.00,
+	restaurant: res1
+)
+
+menu4 = Menu_Item.create!(
+	name: "Kubełek",
+	price: 21.00,
+	restaurant: res1
+)
+
+menu5 = Menu_Item.create!(
+	name: "Spaghetti",
+	price: 9.99,
+	restaurant: res2
 )
 
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')

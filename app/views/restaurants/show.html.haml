@@ -2,3 +2,7 @@
   .row
     .col-lg-12
       %h1.page-header= restaurant.name
+  .row
+    .col-lg-12
+      - restaurant.menu_items.each do |menu_item|
+        %h2.page-header= menu_item.name
