@@ -6,6 +6,11 @@
       %h1.page-header
         Lista restauracji
   / /.row
+  .row
+    = form_tag(restaurants_path, :method => "get", id: "search-form") do
+      = text_field_tag :search, params[:search], placeholder: "Znajdź restaurację..."
+      = submit_tag "Search"
+  / /.row		
   / Project One
   - restaurants.each do |restaurant|
     .row

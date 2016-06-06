@@ -51,4 +51,13 @@ class Restaurant < ActiveRecord::Base
       errors.add(:address, "Can't be empty")
     end
   end
+
+	##
+	# Search method
+	# Searches for a restaurant with a matching name
+
+	def self.search(query)
+		where("name LIKE ?", "%#{query}%")
+	end	
+
 end
