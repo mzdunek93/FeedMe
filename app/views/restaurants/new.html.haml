@@ -1,0 +1,20 @@
+.container
+  .row
+    .col-lg-12
+      = form_for restaurant do |f|
+        .form-group
+          = f.label :title
+          = f.text_field :title, :autofocus => true, class: 'form-control'
+        .form-group
+          = f.label :description
+          = f.email_field :email, class: 'form-control'
+        .form-group
+          = f.label :password
+          = f.password_field :password, class: 'form-control'
+        .form-group
+          = f.label :password_confirmation
+          = f.password_field :password_confirmation, class: 'form-control'
+        .form-group
+          = f.label :role
+          = f.select :role, User.roles.keys.to_a, class: 'form-control'
+        = f.submit 'Sign up', :class => 'button right'

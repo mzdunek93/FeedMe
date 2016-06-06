@@ -8,6 +8,9 @@
 user = CreateAdminService.new.call
 puts 'CREATED ADMIN USER: ' << user.email
 
+User.create!(email: "user@example.com", name: "user", password: "password", password_confirmation: "password")
+User.create!(email: "restaurant@example.com", name: "restaurant", role: "restaurant", password: "password", password_confirmation: "password")
+
 res1 = Restaurant.create!(
   name: "Tropico",
   description: "Witamy serdecznie na naszej stronie, na której możecie zamówić ulubione dania on-line jak i telefonicznie.
@@ -15,7 +18,7 @@ res1 = Restaurant.create!(
   Nasze menu składa się z najpopularniejszych potraw kuchni polskiej, włoskiej oraz tureckiej.
   Wszystkie nasz potrawy przygotowywane są z starannie dobranych składników tak, aby zachwycać świeżością i smakiem.",
   phone: "61 877 55 66",
-  address: "PIZZA POZNAŃ RATAJE 
+  address: "PIZZA POZNAŃ RATAJE
   ul.Kórnicka 24",
   remote_logo_url: "http://pizzatropico.eu/img/logo.png"
 )
@@ -28,31 +31,31 @@ res2 = Restaurant.create!(
   remote_logo_url: "https://d6zktcp1soofu.cloudfront.net/weranda-caffe-8600/1.mWTPT_sld.jpg"
 )
 
-menu1 = Menu_Item.create!(
+menu1 = MenuItem.create!(
 	name: "Pizza Margarita",
 	price: 14.50,
 	restaurant: res1
 )
 
-menu2 = Menu_Item.create!(
+menu2 = MenuItem.create!(
 	name: "Hamburger",
 	price: 11.99,
 	restaurant: res2
 )
 
-menu3 = Menu_Item.create!(
+menu3 = MenuItem.create!(
 	name: "Frytki",
 	price: 6.00,
 	restaurant: res1
 )
 
-menu4 = Menu_Item.create!(
+menu4 = MenuItem.create!(
 	name: "Kubełek",
 	price: 21.00,
 	restaurant: res1
 )
 
-menu5 = Menu_Item.create!(
+menu5 = MenuItem.create!(
 	name: "Spaghetti",
 	price: 9.99,
 	restaurant: res2

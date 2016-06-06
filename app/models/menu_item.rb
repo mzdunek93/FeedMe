@@ -2,7 +2,6 @@ class MenuItem < ActiveRecord::Base
   belongs_to :restaurant
 
 	validate :res_present
-	
 
 	def res_present
 		if restaurant.blank?
