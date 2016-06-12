@@ -15,5 +15,17 @@ RSpec.describe MenuItem, type: :model do
       price: 10, 
       restaurant: @testRes)
     expect(menuItem).to be_invalid 
+  end
+  it "requires menu item to have price" do
+    menuItem = MenuItem.new(
+      name:"",  
+      restaurant: @testRes)
+    expect(menuItem).to be_invalid 
+  end
+  it "requires menu item to be assigned to a restaurant" do
+    menuItem = MenuItem.new(
+      name:"", 
+      price: 10)
+    expect(menuItem).to be_invalid 
   end    
 end
