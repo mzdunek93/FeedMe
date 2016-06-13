@@ -10,6 +10,7 @@ class Restaurant < ActiveRecord::Base
 	validate :address_present
 
 	has_many :menu_items
+  has_many :comments
 	belongs_to :user
 
   ##

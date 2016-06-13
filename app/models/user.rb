@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   after_initialize :set_default_role, :if => :new_record?
 
   has_one :restaurant
-
+  has_many :comments
   ##
   # Function setting the default role executed immediately after initializing the object
   # Sets the role to user unless otherwise set

@@ -8,8 +8,8 @@
 user = CreateAdminService.new.call
 puts 'CREATED ADMIN USER: ' << user.email
 
-User.create!(email: "user@example.com", name: "user", password: "password", password_confirmation: "password")
-User.create!(email: "restaurant@example.com", name: "restaurant", role: "restaurant", password: "password", password_confirmation: "password")
+user1 = User.create!(email: "user@example.com", name: "user", password: "password", password_confirmation: "password")
+user2 = User.create!(email: "restaurant@example.com", name: "restaurant", role: "restaurant", password: "password", password_confirmation: "password")
 
 res1 = Restaurant.create!(
   name: "Tropico",
@@ -44,7 +44,7 @@ menu2 = MenuItem.create!(
 )
 
 menu3 = MenuItem.create!(
-	name: "Frytki",
+	name: "Frytki z ketchupem",
 	price: 6.00,
 	restaurant: res1
 )
@@ -59,6 +59,12 @@ menu5 = MenuItem.create!(
 	name: "Spaghetti",
 	price: 9.99,
 	restaurant: res2
+)
+
+review1 = Comment.create!(
+  text: "Wyśmienita restauracja",
+  user: user1,
+  restaurant: res1
 )
 
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')

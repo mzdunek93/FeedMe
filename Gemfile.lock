@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/activeadmin/activeadmin.git
-  revision: d84f8190edac8c28f942cd4b6c3e16086da9d7a2
+  remote: http://github.com/activeadmin/activeadmin.git
+  revision: cce908d9793ba1fce8483afe5e4112f97d7d0857
   specs:
     activeadmin (1.0.0.pre2)
       arbre (~> 1.0, >= 1.0.2)
@@ -386,5 +386,8 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
 
+RUBY VERSION
+   ruby 2.3.0p0
+
 BUNDLED WITH
-   1.11.2
+   1.12.4

@@ -6,3 +6,10 @@
     .col-lg-12
       - restaurant.menu_items.each do |menu_item|
         %h2.page-header= menu_item.name
+  .row
+    .col-lg-12
+      %h2.page-header Komentarze:
+      - restaurant.comments.each do |comment|
+        test
+        %h4.page-header= comment.user.name
+        %h4.page-header= comment.text
