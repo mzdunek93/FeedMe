@@ -7,6 +7,8 @@ class Restaurant < ActiveRecord::Base
 	validate :name_present
 	validate :description_present
 	validate :phone_present
+	#validate :phone_is_a_number
+	validates_format_of :phone, with: /\A[0-9 ]*\z/i, on: :create
 	validate :address_present
 
 	has_many :menu_items
@@ -39,6 +41,16 @@ class Restaurant < ActiveRecord::Base
   def phone_present
     if phone.blank?
       errors.add(:phone, "Can't be empty")
+    end
+  end
+  
+  ##
+  # Validator for the phone column
+  # Returns error if the phone is not a number
+
+  def phone_is_a_number
+    if phone.to_f.to_s != phone.to_s && phone.to_i.to_s != phone.to_s
+      errors.add(:phone, "Must be a number")
     end
   end
 

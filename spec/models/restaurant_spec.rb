@@ -26,6 +26,14 @@ RSpec.describe Restaurant, type: :model do
       address: "Testing 2")
     expect(restaurant).to be_invalid
   end
+  it "requires restaurant phone no. to be a number" do
+    restaurant = Restaurant.new(
+      name: "Testaurant",
+      description: "This restaurant is supposed to create error",
+      phone: "abcdef", 
+      address: "Testing 2")
+    expect(restaurant).to be_invalid
+  end
   it "requires restaurant address not to be empty" do
     restaurant = Restaurant.new(
       name: "Testaurant",
