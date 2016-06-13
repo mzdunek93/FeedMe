@@ -2,9 +2,9 @@
   %li= link_to 'Edit account', edit_user_registration_path
   %li= link_to 'Sign out', destroy_user_session_path, :method=>'delete'
   - if current_user.restaurant? && current_user.restaurant.nil?
-    %li= link_to 'Add restaurant', '#'
+    %li= link_to 'Add restaurant', new_restaurant_path
   - if current_user.restaurant? && !current_user.restaurant.nil?
-    %li= link_to 'Edit restaurant', '#'
+    %li= link_to 'Edit restaurant', edit_restaurant_path(current_user.restaurant)
 - else
   %li= link_to 'Sign in', new_user_session_path
   %li= link_to 'Sign up', new_user_registration_path

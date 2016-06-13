@@ -21,7 +21,7 @@ gem 'simple_form'
 gem 'activeadmin', github: 'activeadmin'
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'decent_exposure'
+gem 'decent_exposure', '3.0.0.beta2'
 gem 'rdoc'
 gem 'sdoc', require: false
 group :development do
