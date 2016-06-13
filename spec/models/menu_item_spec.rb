@@ -8,7 +8,13 @@ RSpec.describe MenuItem, type: :model do
       phone:"12 345 67 89",
       address:"Test 1, Beta City")
   end
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "allows users to store information about menu item" do
+    menuItem = MenuItem.new(
+      name: "Tasty Treat",
+      price: 9.99, 
+      restaurant: @testRes)
+    expect(menuItem.name).to match "Tasty Treat"
+  end
   it "requires menu item to have name" do
     menuItem = MenuItem.new(
       name:"", 
@@ -18,7 +24,14 @@ RSpec.describe MenuItem, type: :model do
   end
   it "requires menu item to have price" do
     menuItem = MenuItem.new(
-      name:"",  
+      name:"Error Item",  
+      restaurant: @testRes)
+    expect(menuItem).to be_invalid 
+  end
+  it "requires price to be a number" do
+    menuItem = MenuItem.new(
+      name:"Error Item",  
+      price: "abc",
       restaurant: @testRes)
     expect(menuItem).to be_invalid 
   end

@@ -1,7 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe Restaurant, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "allows users to store information about restaurant" do
+    restaurant = Restaurant.new(
+      name: "Test Restaurant",
+      description: "This restaurant is supposed to be created successfully",
+      phone: "123456789", 
+      address: "Testing 2")
+    expect(restaurant.name).to match "Test Restaurant"
+  end
   it "requires restaurant name not to be empty" do
     restaurant = Restaurant.new(
       name: "",
