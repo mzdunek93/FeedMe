@@ -4,6 +4,7 @@
 class RestaurantsController < ApplicationController
   expose :restaurants, ->{Restaurant.all}
   expose :restaurant
+  expose :comment, ->{Comment.new}
 
   before_action :authenticate_user!, except: [:show, :index]
   before_action :correct_user!, except: [:show, :index, :new, :create]

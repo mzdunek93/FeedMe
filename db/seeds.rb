@@ -63,6 +63,7 @@ menu5 = MenuItem.create!(
 
 review1 = Comment.create!(
   text: "Wyśmienita restauracja",
+  rating: 5,
   user: user1,
   restaurant: res1
 )

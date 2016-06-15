@@ -2,13 +2,24 @@
   .row
     .col-lg-12
       %h1.page-header= restaurant.name
+      %h2= "Average rating: #{restaurant.rating}"
   .row
     .col-lg-12
       - restaurant.menu_items.each do |menu_item|
-        %h2.page-header= menu_item.name
+        .menu-item= "#{menu_item.name} - #{menu_item.price}"
   .row
     .col-lg-12
-      %h2.page-header Komentarze:
+      %h2.page-header Reviews:
       - restaurant.comments.each do |comment|
-        %h4.page-header= comment.user.name
-        %h4.page-header= comment.text
+        .comment-user= comment.user.name
+        .comment-rating= comment.rating
+        .comment-text= comment.text
+  - if user_signed_in? && current_user.user?
+    .row
+      .col-lg-12
+        %h2.page-header Write your own review:
+        = simple_form_for comment do |f|
+          = f.input :text
+          = f.input :rating, collection: 1..5
+          = f.hidden_field :restaurant_id, value: restaurant.id
+          = f.button :submit
