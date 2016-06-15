@@ -1,18 +1,17 @@
 require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
   before :each do
     @testRes = Restaurant.create!(
-      name: "TempRes", 
-      description:"Restaurant for testing", 
+      name: "TempRes",
+      description:"Restaurant for testing",
       phone:"12 345 67 89",
       address:"Test 1, Beta City")
     @testUser = User.create!(
-      email: "user@test.com", 
-      name: "test", 
-      password: "password", 
-      password_confirmation: "password"  
+      email: "user@test.com",
+      name: "test",
+      password: "password",
+      password_confirmation: "password"
     )
   end
   it "allows user to post comment about a restaurant" do
@@ -32,7 +31,7 @@ RSpec.describe Comment, type: :model do
     com = Comment.new(
     text: "Tasty restaurant",
     user: @testUser)
-    expect(com).to be_invalid    
+    expect(com).to be_invalid
   end
   it "requires comment to have text" do
     com = Comment.new(
