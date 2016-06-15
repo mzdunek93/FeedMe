@@ -77,7 +77,7 @@ ActiveRecord::Schema.define(version: 20160615084316) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "user_id"
-    t.float    "rating", default: 0
+    t.float    "rating"
   end
 
   add_index "restaurants", ["user_id"], name: "index_restaurants_on_user_id"
